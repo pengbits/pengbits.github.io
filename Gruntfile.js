@@ -3,14 +3,17 @@
     // http://thanpol.as/jekyll/jekyll-and-livereload-flow/
     module.exports = function(grunt) 
     {
-        require('load-grunt-tasks')(grunt); 
-        var _ =     require('underscore'),
-            log =   grunt.log.writeln
-        //, logJson =   (function(str){ log(JSON.stringify(str)); })
+                        require('load-grunt-tasks')(grunt); 
+        var _ =         require('underscore'),
+            log =       grunt.log.writeln,
+            logJson =   (function(str){ 
+                log(JSON.stringify(str)); 
+            }),
+            
+            rt=         grunt.registerTask
         ;
     
-        //var watch_options= {'livereload': true, 'spawn':false};
-    
+        
         grunt.initConfig({
         
             watch: {
@@ -69,8 +72,9 @@
         
         });
     
-        grunt.registerTask('sass:refresh', ['sass:update','copy:css']);
-        grunt.registerTask('develop', ['connect:server','watch']);
+        rt('sass:refresh', ['sass:update','copy:css']);
+        rt('develop', ['connect:server','watch']);
+        rt('default', ['develop']);
       
     };
 

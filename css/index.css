@@ -1,3 +1,4 @@
-html, body {
-  outline: green solid 2px;
+html,
+body {
+  font-family: 'Merriweather', 'Calibri', 'Helvetica', sans-serif;
 }

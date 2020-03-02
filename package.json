@@ -1,6 +1,9 @@
 {
   "name": "pengbits",
   "version": "1.0.0",
+  "scripts": {
+    "jekyll:install":"gem install bundler jekyll"
+  },
   "description": "pengbits",
   "devDependencies": {
     "grunt": "^0.4.5",

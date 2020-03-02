@@ -2,3 +2,16 @@ html,
 body {
   font-family: 'Merriweather', 'Calibri', 'Helvetica', sans-serif;
 }
+
+.cv {
+  display: flex;
+  flex-direction: row;
+}
+.cv__main {
+  flex-grow: 2;
+  outline: purple solid 2px;
+}
+.cv__aside {
+  flex-grow: 1;
+  outline: green solid 2px;
+}

@@ -3,3 +3,17 @@
 	body {
 		font-family: 'Merriweather', 'Calibri', 'Helvetica', sans-serif;
 	}
+	
+	.cv {
+		display: flex;
+		flex-direction: row;
+		
+		&__main {
+			flex-grow: 2;
+			outline: purple solid 2px
+		}
+		&__aside {
+			flex-grow: 1;
+			outline: green solid 2px
+		}
+	}

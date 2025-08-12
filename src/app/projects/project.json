@@ -3,12 +3,12 @@
     "id":"1",
     "title":"Sho.com",
     "slug":"sho.com",
-    "description":"Full redesign of Showtimes marketing site, which had 4M monthly unique visitors at it's peak."
+    "description":"Full redesign of Showtime's marketing site, leveraging a Design System and reusable component library"
   },{
     "id":"2",
-    "title":"Sho.com Design System",
+    "title":"Sho.com Design System Styleguide",
     "slug":"sho.com-design-system",
-    "description":"Responsive Design System and reusable component library built to support the sho.com redesign."
+    "description":"The internal styleguide and developer-facing documentation for the sho.com Design System."
   },{
     "id":"3",
     "title":"Paige CMS",

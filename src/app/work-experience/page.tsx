@@ -1,31 +1,36 @@
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
 import workData from './work.json';
 
 export default function WorkExperience() {
   const companies = workData.work || []
   return (
-    <div>
-      <h1 className='text-2xl'>Work Experience</h1>
+    <Container maxWidth="md">
+      <Typography variant="h3">Work Experience</Typography>
       {companies.map(({roles,company,location},index) => {
         return (
           <div key={index} className='mb-4'>
-            <h2 className="text-2xl">{company} <span className='text-sm'>
-              {location}</span></h2>
+            <Typography sx={{marginBottom:'15px'}} variant="h4">{company} <span className='text-sm'>
+              {location}</span></Typography>
             {roles.map((role) => {
               return (<div key={role.title} className='mb-4'>
-                <h2 className="text-xl">{role.title}{' '}
-                  <span className='text-sm'>{role.startDate} - {role.endDate}</span></h2>
-                <ul>
+                <Typography variant="h5">{role.title}{' '}
+                  <span className='text-sm'>{role.startDate} - {role.endDate}</span></Typography>
+                <List sx={{ listStyleType: 'disc', listStylePosition: 'inside' }}>
                   {role.achievements.map((item,i) => {
-                    return <li key={i} className='list-disc list-inside mb-2'>
+                    return <ListItem sx={{ display: 'list-item' }} key={i}>
                       {item}
-                    </li>
+                    </ListItem>
                   })}
-                </ul>
+                </List>
               </div>)
             })}
           </div>
         )
-      })}      
-    </div>
+      })}       
+    </Container>
   );
 }

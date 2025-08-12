@@ -3,7 +3,7 @@ const projects:Project[] = [{
   id:"1",
   title:"Sho.com",
   slug:"sho.com",
-  description:"Full redesign of Showtime's marketing site, leveraging a Design System and reusable component library"
+  description:"Full redesign of Showtime's marketing site, leveraging a Design System and reusable component library to support the build."
 },{
   id:"2",
   title:"Sho.com Design System Styleguide",
@@ -13,7 +13,7 @@ const projects:Project[] = [{
   id:"3",
   title:"Paige",
   slug:"paige-cms",
-  description:"A client for a headless CMS written in React."
+  description:"A React client for a CMS with features such as composable form UI, date preview, rich-text-editor, filters, themes, and support for 500+ promotions, 50+ campaigns, and 20+ form types."
 },{
   id:"4",
   title:"Otto",
@@ -24,7 +24,7 @@ const projects:Project[] = [{
   id:"5",
   title:"Flatbush Pediatrics",
   slug:"flatbush-pediatrics",
-  description:"A clone of the Tribeca Pediatrics Patient Portal"
+  description:"A clone of the Tribeca Pediatrics Patient Portal."
 },{
   id:"6",
   title:"Park.me",

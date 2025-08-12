@@ -1,10 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
-import { CssBaseline } from "@mui/material";
-import { ThemeProvider } from '@mui/material/styles';
-import { NavigationBar } from "@/components/NavigationBar";
-import theme from '@/theme';
 import "./globals.css";
 
 const geistSans = Geist({
@@ -30,13 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-
-        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
-          <ThemeProvider theme={theme}>
-          <NavigationBar />
-          {children}
-          </ThemeProvider>
-        </AppRouterCacheProvider>
+        {children}
       </body>
     </html>
   );

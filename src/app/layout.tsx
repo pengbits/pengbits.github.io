@@ -1,3 +1,4 @@
+import { Provider } from "@/components/ui/provider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -13,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Peng Bits",
-  description: "Personal portfolio site of Dave Paul, a full-stack engineer based in Brooklyn.",
-};
+  title: "Dave Paul - Senior Frontend Engineer ",
+  description: "Senior Frontend Engineer | Crafting consistent, delightful, and impactful web experiences"
+}
 
 export default function RootLayout({
   children,
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        {children}
+        <Provider>{children}</Provider>
       </body>
     </html>
   );

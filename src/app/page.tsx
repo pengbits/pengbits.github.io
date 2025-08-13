@@ -34,7 +34,7 @@ export default function Home() {
           key={c}
            padding={{
             x:0,
-            y:8
+            y:4
           }}
         >
           {roles.map(({title,startDate,endDate,achievements},r) => {

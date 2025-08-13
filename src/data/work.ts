@@ -1,4 +1,4 @@
-import { Company,Role } from "@/types/Work"
+import { Company } from "@/types/Work"
 
 const work_history:Company[] = [{
   name:"Freelance",

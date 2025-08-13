@@ -2,7 +2,6 @@ import { Heading, GridItem, Link, Text} from "@chakra-ui/react";
 import {Project} from "@/types/Project"
 import ProjectLinkCollection from "./ProjectLinkCollection";
 export const ProjectGridItem = ({
-  id,
   title,
   description,
   links

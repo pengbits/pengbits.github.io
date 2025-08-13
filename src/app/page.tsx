@@ -1,4 +1,4 @@
-import { Container, Heading, List, Text, } from "@chakra-ui/react"
+import { Container, List, } from "@chakra-ui/react"
 import { Section } from "@/components/Section"
 import { ProjectGrid } from "@/components/projects/ProjectGrid"
 import PROJECTS from "@/data/projects"
@@ -61,7 +61,7 @@ export default function Home() {
     <Section
       heading="5xl" 
       title="Get In Touch">
-      <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out.</p>
+      <p>I&apos;m always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out.</p>
       <p>Email: peng.bits@gmail.com</p>
       <p>LinkedIn: <a href="https://linkedin.com/in/davepaul">linkedin.com/in/davepaul</a></p>
       <p>Github: <a href="https://github.com/pengbits">pengbits</a></p>

@@ -1,10 +1,10 @@
 import { HStack, Button} from "@chakra-ui/react" 
-import { ProjectLinkCollection } from "@/types/project"
+import { ProjectLinkCollection } from "@/types/Project"
 
 type ProjectLinkCollectionProps = {
   links: ProjectLinkCollection | undefined
 }
-export default ({links}:ProjectLinkCollectionProps) => {
+const ProjectLinkCollectionComponent = ({links}:ProjectLinkCollectionProps) => {
   if(!links) return null
 
   return <HStack>
@@ -14,3 +14,4 @@ export default ({links}:ProjectLinkCollectionProps) => {
   </HStack>
 
 }
+export default ProjectLinkCollectionComponent

@@ -14,7 +14,7 @@ const work_history:Company[] = [{
     ]
   }],
 },{
-  name: "Showtime Networks, A Paramount Global Co.",
+  name: "Showtime Networks",
   location:"New York, NY",
   roles: [{
     title: "Director, Front-end Development",

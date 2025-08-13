@@ -1,5 +1,6 @@
-import { Container, Heading, List, Text, Box } from "@chakra-ui/react"
+import { Container, Heading, List, Text, } from "@chakra-ui/react"
 import { Section } from "@/components/Section"
+import { ProjectGrid } from "@/components/projects/ProjectGrid"
 import PROJECTS from "@/data/projects"
 import WORK_HISTORY from "@/data/work"
 
@@ -13,12 +14,7 @@ export default function Home() {
     <Section
       heading="5xl" 
       title="Projects">
-      {PROJECTS.map(({title,id,description}) => {
-        return (<div key={id}>
-        <Heading size="3xl">{title}</Heading>
-        <p>{description}</p>
-      </div>)
-    })}
+      <ProjectGrid projects={PROJECTS} />
     </Section>
     <Section
       heading="5xl" 

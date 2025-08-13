@@ -1,4 +1,4 @@
-import {Project} from "@/types/project"
+import {Project} from "@/types/Project"
 const projects:Project[] = [{
   id:"1",
   title:"Sho.com",

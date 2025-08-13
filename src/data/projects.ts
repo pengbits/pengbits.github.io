@@ -3,17 +3,30 @@ const projects:Project[] = [{
   id:"1",
   title:"Sho.com",
   slug:"sho.com",
-  description:"Full redesign of Showtime's marketing site, leveraging a Design System and reusable component library to support the build."
+  description:"Full redesign of Showtime's marketing site, leveraging a Design System and reusable component library to support the build.",
+  links: {
+    git: "https://github.com/pengbits/sho-www",
+    primary: "https://github.com/pengbits/sho-www"
+  }
 },{
   id:"2",
   title:"Sho.com Styleguide",
   slug:"sho.com-styleguide",
-  description:"The internal styleguide site and developer-facing documentation for the sho.com Design System."
+  description:"The internal styleguide site and developer-facing documentation for the sho.com Design System.",
+  links: {
+    git: "https://github.com/pengbits/sho-styleguide",
+    live: "https://sho-styleguide.vercel.app/",
+    primary: "https://sho-styleguide.vercel.app/"
+  }
 },{
   id:"3",
   title:"Paige",
   slug:"paige-cms",
-  description:"A React client for a CMS with features such as composable form UI, date preview, rich-text-editor, filters, themes, and search."
+  description:"A React client for a CMS with features such as composable form UI, date preview, rich-text-editor, filters, themes, and search.",
+  links: {
+    git: "https://github.com/pengbits/sho-paige",
+    primary: "https://github.com/pengbits/sho-paige"
+  }
 },{
   id:"4",
   title:"Otto",
@@ -24,7 +37,12 @@ const projects:Project[] = [{
   id:"5",
   title:"Flatbush Pediatrics",
   slug:"flatbush-pediatrics",
-  description:"A clone of the Tribeca Pediatrics Patient Portal with 80% feature parity. A full-stack React app with a Node.js backend, using Shadcn components for ux and Chart.js for data visualizations."
+  description:"A clone of the Tribeca Pediatrics Patient Portal with 80% feature parity. A full-stack React app with a Node.js backend, using Shadcn components for ux and Chart.js for data visualizations.",
+  links: {
+    git:"/fbpeds",
+    live: "https://fbpeds.onrender.com/",
+    primary: "https://fbpeds.onrender.com/"
+  }
 },{
   id:"6",
   title:"Park.me",
@@ -35,9 +53,9 @@ const projects:Project[] = [{
   title:"Asbo",
   slug:"asbo",
   description:"An aggregator of a few London-based internet radio stations, built with a React/Redux frontend and a Ruby on Rails server layer. Uses nokigiri for scraping html content from multiple sources on the web, which are parsed and coerced into model collections with a unified shape.",
-  links:[{
-    title:"github",
-    url:"https://github.com/pengbits/asbo"
-  }]
+  links:{
+    git: "https://github.com/pengbits/asbo",
+    primary:"https://github.com/pengbits/asbo"
+  }
 }]
 export default projects.filter(p => !p.draft)

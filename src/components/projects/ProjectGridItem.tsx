@@ -1,10 +1,19 @@
-import { Heading } from "@chakra-ui/react";
+import { Heading, GridItem, Link} from "@chakra-ui/react";
 import {Project} from "@/types/Project"
-import { GridItem } from "@chakra-ui/react";
-
-export const ProjectGridItem = ({id,title,description}:Project) => {
-  return (<GridItem  colSpan={{base:2, md:1}} style={{outline:'purple solid 1px'}}>
-    <Heading size="3xl">{title}</Heading>
+import ProjectLinkCollection from "./ProjectLinkCollection";
+export const ProjectGridItem = ({
+  id,
+  title,
+  description,
+  links
+}:Project) => {
+  return (<GridItem  
+    colSpan={{base:2, md:1}}
+  >
+    {links && links.primary ? 
+      <Heading size="3xl"><Link target={links.primary.indexOf('/') == 0 ? "_self":"_blank"} href={links.primary}>{title}</Link></Heading> :
+      <Heading size="3xl">{title}</Heading>}
     <p>{description}</p>
+    <ProjectLinkCollection links={links} />
   </GridItem>)
 }

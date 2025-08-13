@@ -1,6 +1,8 @@
-export type ProjectLink = {
-  title: string,
-  url: string
+export type ProjectLinkCollection = {
+  git?: string,
+  live?: string,
+  local?: string,
+  primary?: string
 }
 export type Project = {
   id: string,
@@ -9,6 +11,6 @@ export type Project = {
   description?: string,
   current?: boolean,
   draft?:boolean,
-  links?: ProjectLink[],
+  links?: ProjectLinkCollection,
   status?: "in-progress | archived | live"
 }

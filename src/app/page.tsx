@@ -5,15 +5,20 @@ import PROJECTS from "@/data/projects"
 import WORK_HISTORY from "@/data/work"
 
 export default function Home() {
-  return (<Container maxWidth="2xl">
+  return (<Container maxWidth="3xl">
     <Section
       heading="6xl" 
       title="Dave Paul">
-      <p>Sed ut sollicitudin massa. Nullam in pellentesque neque.</p> 
+      <p>Senior Frontend Engineer | Crafting consistent, delightful, and impactful web experiences.</p> 
     </Section>
     <Section
       heading="5xl" 
-      title="Projects">
+      title="Projects"
+      padding={{
+          x:4,
+          y:8
+        }}
+      >
       <ProjectGrid projects={PROJECTS} />
     </Section>
     <Section
@@ -27,6 +32,10 @@ export default function Home() {
           title={name}
           subTitle={location}
           key={c}
+           padding={{
+            x:0,
+            y:8
+          }}
         >
           {roles.map(({title,startDate,endDate,achievements},r) => {
           return (
@@ -35,7 +44,7 @@ export default function Home() {
               title={title}
               subTitle={`${startDate} - ${endDate}`}
               key={r}
-              padding={0}
+              padding={{x:0,y:6}}
             >
             <List.Root px={5}>
               {achievements.map((text,a) => {
@@ -57,6 +66,11 @@ export default function Home() {
       <p>LinkedIn: <a href="https://linkedin.com/in/davepaul">linkedin.com/in/davepaul</a></p>
       <p>Github: <a href="https://github.com/pengbits">pengbits</a></p>
     </Section>
+    <Section heading="xs"
+      marginTop={20}
+      title="&copy; Peng Bits 2025. All wrongs reversed.">
+    </Section>
   </Container>
+
   )
 }

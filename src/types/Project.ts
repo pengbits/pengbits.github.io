@@ -14,3 +14,13 @@ export type Project = {
   links?: ProjectLinkCollection,
   status?: "in-progress | archived | live"
 }
+
+export type ProjectDetails = {
+  id: string,
+  title: string,
+  slug: string,
+  body: string[],
+  links?: ProjectLinkCollection,
+  images?: string[],
+  videos?: string[]
+}

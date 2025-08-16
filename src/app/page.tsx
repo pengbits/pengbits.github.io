@@ -3,13 +3,13 @@ import { Section } from "@/components/Section"
 import { ProjectGrid } from "@/components/projects/ProjectGrid"
 import PROJECTS from "@/data/projects"
 import WORK_HISTORY from "@/data/work"
-
+import ABOUT from "@/data/about"
 export default function Home() {
   return (<Container maxWidth="3xl">
     <Section
       heading="6xl" 
-      title="Dave Paul">
-      <p>Senior Frontend Engineer | Crafting consistent, delightful, and impactful web experiences.</p> 
+      title={ABOUT.name}>
+      <p>{ABOUT.tagline}</p>
     </Section>
     <Section
       heading="5xl" 

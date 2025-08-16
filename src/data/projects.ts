@@ -47,7 +47,7 @@ const projects:Project[] = [{
   id:"6",
   title:"Park.me",
   slug:"park.me",
-  description:"A copy of the NYC parking app, using publicly-available meter and geospatial data to populate a collection of REST APIs which are consumed by a React client. (In-progress)."
+  description:"A copy of the NYC parking app, using publicly-available meter data to populate a collection of REST APIs for the geospatial layer, which are consumed by a React client with a Google Maps integration. In-progress).",
 },{
   id:"7",
   title:"Asbo",

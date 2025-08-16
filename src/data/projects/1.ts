@@ -12,7 +12,8 @@ const data:ProjectDetails = {
     "Design System",
     "Component Library",
     "JavaScript/ES6",
-    "CSS3"
+    "CSS3",
+    "Showtime"
   ]
 }
 export default data

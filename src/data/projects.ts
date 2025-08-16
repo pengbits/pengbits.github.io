@@ -1,5 +1,10 @@
 import {Project} from "@/types/Project"
-export const projects_map = {
+
+interface ProjectIndex  {
+  [key: string] : Project
+}
+
+export const projects_map:ProjectIndex = {
   "1" : {
     id:"1",
     title:"Sho.com",
@@ -7,7 +12,8 @@ export const projects_map = {
     description:"Full redesign of Showtime's marketing site, leveraging a Design System and reusable component library to support the build.",
     links: {
       git: "https://github.com/pengbits/sho-www",
-      primary: "https://github.com/pengbits/sho-www"
+      primary: "https://github.com/pengbits/sho-www",
+      local: "/projects/1/sho.com"
     }
   },
   "2" : {
@@ -18,7 +24,8 @@ export const projects_map = {
     links: {
       git: "https://github.com/pengbits/sho-styleguide",
       live: "https://sho-styleguide.vercel.app/",
-      primary: "https://sho-styleguide.vercel.app/"
+      primary: "https://sho-styleguide.vercel.app/",
+      local: "/projects/2/sho.com-styleguide"
     }
   },
   "3" : {

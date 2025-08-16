@@ -22,5 +22,6 @@ export type ProjectDetails = {
   body: string[],
   links?: ProjectLinkCollection,
   images?: string[],
-  videos?: string[]
+  videos?: string[],
+  tags?: string[]
 }

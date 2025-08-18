@@ -35,7 +35,8 @@ export const projects_map:ProjectIndex = {
     description:"A React client for a CMS with features such as composable form UI, date preview, rich-text-editor, filters, themes, and search.",
     links: {
       git: "https://github.com/pengbits/sho-paige",
-      primary: "https://github.com/pengbits/sho-paige"
+      primary: "https://github.com/pengbits/sho-paige",
+      local: "/projects/3/paige-cms"
     }
   },
   "4" : {
@@ -44,6 +45,10 @@ export const projects_map:ProjectIndex = {
     slug:"otto",
     description:"A data warehouse built in AWS, facilitating a better understanding of customer acquisition through large scale data extraction and analysis.",
     draft:true,
+    links: {
+      primary: "/projects/4/otto",
+      local: "/projects/4/otto"
+    }
   },
   "5" : {
     id:"5",
@@ -53,7 +58,8 @@ export const projects_map:ProjectIndex = {
     links: {
       git:"/fbpeds",
       live: "https://fbpeds.onrender.com/",
-      primary: "https://fbpeds.onrender.com/"
+      primary: "https://fbpeds.onrender.com/",
+      local: "/projects/5/flatbush-pediatrics"
     }
   },
   "6" : {

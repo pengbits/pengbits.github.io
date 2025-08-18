@@ -1,16 +1,29 @@
 import { HStack, Button} from "@chakra-ui/react" 
 import { ProjectLinkCollection } from "@/types/Project"
+import { ReactNode } from "react"
 
 type ProjectLinkCollectionProps = {
-  links: ProjectLinkCollection | undefined
+  links?: ProjectLinkCollection,
+  omit?: string
 }
-const ProjectLinkCollectionComponent = ({links}:ProjectLinkCollectionProps) => {
-  if(!links) return null
+type ButtonProps = {
+  target?: string,
+  href: string,
+  children: ReactNode
+}
+const ButtonLink = ({target, href, children}:ButtonProps) => {
+  return (
+    <Button size="xs" variant="subtle">
+      <a target={target || '_blank'} href={href}>{children}</a>
+    </Button>)
+}
 
+const ProjectLinkCollectionComponent = ({links,omit}:ProjectLinkCollectionProps) => {
+  if(!links) return null
   return <HStack>
-    {links.live &&  <Button size="xs" variant="subtle"><a target="_blank" href={links.live}>live site</a></Button>}
-    {links.local && <Button size="xs" variant="subtle"><a href={links.local}>details</a></Button>}
-    {links.git &&   <Button size="xs" variant="subtle"><a target="_blank" href={links.git}>github</a></Button>}
+    {links.live &&  (!omit || omit !== 'live')  && <ButtonLink href={links.live}>Live Site</ButtonLink>}
+    {links.local && (!omit || omit !== 'local') && <ButtonLink href={links.local}>Learn More</ButtonLink>}
+    {links.git  &&  (!omit || omit !== 'git')   && <ButtonLink href={links.git}>Git</ButtonLink>}
   </HStack>
 
 }

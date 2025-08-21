@@ -5,6 +5,7 @@ import PROJECTS from "@/data/projects"
 import {ProjectDetails} from "@/types/Project"
 import { getProject } from "@/lib/getProject"
 import ProjectLinkCollection from "@/components/projects/ProjectLinkCollection"
+import {ResponsiveVideo} from "@/components/projects/ResponsiveVideo"
 
 export const generateStaticParams = function(){
   return PROJECTS.map(project => ({
@@ -29,6 +30,7 @@ export default async function Project({
       title={data.title}
       padding={{x:4,y:32}}
     >
+      {data.video && <ResponsiveVideo src={data.video} />}
       <BodyText body={data.body} />
     </Section>
     <Section

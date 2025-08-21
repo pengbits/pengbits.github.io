@@ -4,6 +4,11 @@ export type ProjectLinkCollection = {
   local?: string,
   primary?: string
 }
+export type VideoSourceSet = {
+  title: string,
+  mobile?: string,
+  desktop?: string,
+}
 export type Project = {
   id: string,
   title: string,
@@ -11,6 +16,7 @@ export type Project = {
   description?: string,
   current?: boolean,
   draft?:boolean,
+  video?:VideoSourceSet,
   links?: ProjectLinkCollection,
   status?: "in-progress | archived | live"
 }
@@ -22,6 +28,6 @@ export type ProjectDetails = {
   body: string[],
   links?: ProjectLinkCollection,
   images?: string[],
-  videos?: string[],
+  video?: VideoSourceSet,
   tags?: string[]
 }

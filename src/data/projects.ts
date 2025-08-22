@@ -12,7 +12,7 @@ export const projects_map:ProjectIndex = {
     description:"Full redesign of Showtime's marketing site, leveraging a Design System and reusable component library to support the build.",
     links: {
       git: "https://github.com/pengbits/sho-www",
-      primary: "https://github.com/pengbits/sho-www",
+      primary: "/projects/1/sho.com",
       local: "/projects/1/sho.com"
     }
   },
@@ -20,11 +20,11 @@ export const projects_map:ProjectIndex = {
     id:"2",
     title:"Sho.com Styleguide",
     slug:"sho.com-styleguide",
-    description:"The internal styleguide site and developer-facing documentation for the sho.com Design System.",
+    description:"The styleguide site serves to frame the Sho.com Design System in a useable context, provide examples of the components and foundations/primitives, and house developer, designer, and product-facing documentation.",
     links: {
       git: "https://github.com/pengbits/sho-styleguide",
       live: "https://sho-styleguide.vercel.app/",
-      primary: "https://sho-styleguide.vercel.app/",
+      primary: "/projects/2/sho.com-styleguide",
       local: "/projects/2/sho.com-styleguide"
     }
   },

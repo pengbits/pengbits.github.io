@@ -6,6 +6,7 @@ export const ProjectGridItem = ({
   description,
   links
 }:Project) => {
+
   return (<GridItem  
     colSpan={{base:2, md:1}}
   >

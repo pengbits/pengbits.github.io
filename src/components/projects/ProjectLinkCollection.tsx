@@ -11,10 +11,10 @@ type ButtonProps = {
   href: string,
   children: ReactNode
 }
-const ButtonLink = ({target, href, children}:ButtonProps) => {
+const ButtonLink = ({href, children}:ButtonProps) => {
   return (
     <Button size="xs" variant="subtle">
-      <a target={target || '_blank'} href={href}>{children}</a>
+      <a target={href.indexOf('/') == 0 ? "_self":"_blank"} href={href}>{children}</a>
     </Button>)
 }
 

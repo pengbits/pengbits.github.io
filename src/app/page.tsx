@@ -1,9 +1,11 @@
-import { Container, List, } from "@chakra-ui/react"
+import { Container, List, Grid, GridItem } from "@chakra-ui/react"
 import { Section } from "@/components/Section"
 import { ProjectGrid } from "@/components/projects/ProjectGrid"
 import PROJECTS from "@/data/projects"
 import WORK_HISTORY from "@/data/work"
 import ABOUT from "@/data/about"
+import SKILLS from "@/data/skills"
+console.log(SKILLS)
 export default function Home() {
   return (<Container maxWidth="3xl">
     <Section
@@ -57,6 +59,21 @@ export default function Home() {
         })}
         </Section>)
       })}
+    </Section>
+    <Section
+      heading="5xl" 
+      title="Skills"
+    >
+      <Grid mt={4} templateColumns="repeat(2, 1fr)" gap="6">
+        {SKILLS.map((s,i) => {
+          return (<GridItem 
+            key={i} 
+            colSpan={{base:2, md:1}}>
+              {s.name}
+            </GridItem>
+          )
+          })}
+      </Grid>
     </Section>
     <Section
       heading="5xl" 

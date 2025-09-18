@@ -56,7 +56,7 @@ export const projects_map:ProjectIndex = {
     slug:"flatbush-pediatrics",
     description:"A clone of the Tribeca Pediatrics Patient Portal with 80% feature parity. A full-stack React app with a Node.js backend, using Shadcn components for ux and Chart.js for data visualizations.",
     links: {
-      git:"/fbpeds",
+      git:"https://github.com/pengbits/fbpeds",
       live: "https://fbpeds.onrender.com/",
       primary: "https://fbpeds.onrender.com/",
       local: "/projects/5/flatbush-pediatrics"
@@ -67,7 +67,10 @@ export const projects_map:ProjectIndex = {
     title:"Park.me",
     slug:"park.me",
     description:"A copy of the NYC parking app, using publicly-available meter data to populate a collection of REST APIs for the geospatial layer, which are consumed by a React client with a Google Maps integration. In-progress).",
-},
+    links: {
+      git: "https://github.com/pengbits/park.me"
+    }
+  },
   "7" : {
     id:"7",
     title:"Asbo",

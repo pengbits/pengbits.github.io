@@ -21,7 +21,7 @@ export const projects_map:ProjectIndex = {
     title:"Sho.com Styleguide",
     slug:"sho.com-styleguide",
     description:"The styleguide site serves to frame the Sho.com Design System in a useable context, provide examples of the components and foundations/primitives, and house developer, designer, and product-facing documentation.",
-    primaryLink: 'live',
+    primaryLink: 'local',
     links: {
       git: "https://github.com/pengbits/sho-styleguide",
       live: "https://sho-styleguide.vercel.app/",

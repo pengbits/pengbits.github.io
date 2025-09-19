@@ -5,8 +5,13 @@ const meta:any = projects_map["2"]
 const data:ProjectDetails = {
   ...meta,
   body:[
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet fermentum lectus. Cras eget viverra turpis. Sed tellus risus, vulputate sed tincidunt vitae, scelerisque ut dolor. Donec feugiat enim vitae lorem laoreet tristique. Ut arcu lorem, facilisis at tempus sit amet, vestibulum in enim. Vestibulum porta, sapien eu mollis commodo, sapien dui maximus justo, vitae varius neque erat non nisi.",
-    "Aliquam ultricies interdum maximus. In hac habitasse platea dictumst. Quisque ligula lectus, elementum in eros ut, malesuada eleifend ligula. Suspendisse condimentum sit amet velit nec placerat. Cras nec odio ligula. Phasellus vitae ultrices arcu. Phasellus sem erat, facilisis et varius quis, ullamcorper vel purus. Cras a felis varius, scelerisque nunc consectetur, placerat dolor. Duis nisl sem, aliquam eu sem ut, volutpat feugiat turpis."
+  `The sho.com Styleguide was the internal site for cataloging the component library and Design System that powered the marketing site. 
+  It served as a 'living' documentation hub for showcasing components, patterns and primitives, providing context and examples of how to use the system, similar how Storybook is commonly used today.`,
+  `The Design Tokens are defined as SASS variables, with everything from colors and typography to dimensional units defined in their own distinct layers. JavaScript is applied at the component level, meaning that developers can scale up complexity as needed, applying simple behaviors with vanilla JS/ES6+, or by writing more complex components in React.
+  Each component or primitive has its own directory containing the css, html and optional js source files, as well as a markdown file which houses the documentation and article-style content. This provided a lot of flexibility for creating the styleguide, by wrapping the markdown files in their own presentation layer and coercing them into a static site with Metalsmith.
+  `,
+  `There were two different contexts that consumed the Design System, but it was crucial that we be able to work on them both in parallel, and that changes to the system propagate across the consumers as quickly as possible. These were the styleguide, and the public-facing marketing site (Sho.com). I ended up going with a simple approach where the design system dependency was sym-linked into these contexts, proving an entrypoint that we could import normally. I wrote some npm scripts for managing the sym-links, and we used webpack for our build process and for the local dev server. Git hooks and a bare-repo allowed us to deploy the styleguide site up to production with every change, keeping the documentation and references current.`,
+  `Crucially, this gave us a single source of truth, ensuring that changes to the component definitions were available in both the marketing site and the styleguide/documentation hub while working. When we later had to introduce another brand as a consumer of the design system with its own theme, the 'poor-man's monorepo' architecture held up.`
   ],
   video: {
     title: 'Sho.com Styleguide',
@@ -20,6 +25,9 @@ const data:ProjectDetails = {
     "CSS3",
     "Metalsmith",
     "Showtime"
+  ],
+  relatedProjects: [
+    '1'
   ]
 }
 export default data

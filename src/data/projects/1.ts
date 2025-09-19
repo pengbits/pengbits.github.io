@@ -26,6 +26,9 @@ const data:ProjectDetails = {
     "JavaScript/ES6",
     "CSS3",
     "Showtime"
+  ],
+  relatedProjects: [
+    '2'
   ]
 }
 export default data

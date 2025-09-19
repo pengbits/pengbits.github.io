@@ -39,5 +39,6 @@ export type ProjectDetails = {
   links?: ProjectLinkCollection,
   images?: string[],
   video?: VideoSourceSet,
-  tags?: string[]
+  tags?: string[],
+  relatedProjects? : string[]
 }

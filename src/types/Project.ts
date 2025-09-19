@@ -1,9 +1,18 @@
+export type LinkType = 
+  | 'git'
+  | 'local'
+  | 'live'
+
 export type ProjectLinkCollection = {
-  git?: string,
-  live?: string,
-  local?: string,
-  primary?: string
+  [key in LinkType]?:string
 }
+
+export const LinkLabels = {
+  git: 'git',
+  local: 'case study',//'learn more'
+  live: 'live site'
+}
+
 export type VideoSourceSet = {
   title: string,
   mobile?: string,
@@ -18,6 +27,7 @@ export type Project = {
   draft?:boolean,
   video?:VideoSourceSet,
   links?: ProjectLinkCollection,
+  primaryLink?: LinkType,
   status?: "in-progress | archived | live"
 }
 

@@ -1,5 +1,5 @@
 import { HStack, Button} from "@chakra-ui/react" 
-import { ProjectLinkCollection } from "@/types/Project"
+import { ProjectLinkCollection, LinkLabels} from "@/types/Project"
 import { ReactNode } from "react"
 
 type ProjectLinkCollectionProps = {
@@ -21,9 +21,9 @@ const ButtonLink = ({href, children}:ButtonProps) => {
 const ProjectLinkCollectionComponent = ({links,omit}:ProjectLinkCollectionProps) => {
   if(!links) return null
   return <HStack>
-    {links.live &&  (!omit || omit !== 'live')  && <ButtonLink href={links.live}>Live Site</ButtonLink>}
-    {links.local && (!omit || omit !== 'local') && <ButtonLink href={links.local}>Learn More</ButtonLink>}
-    {links.git  &&  (!omit || omit !== 'git')   && <ButtonLink href={links.git}>Git</ButtonLink>}
+    {links.live &&  (!omit || omit !== 'live')  && <ButtonLink href={links.live}>{LinkLabels.live}</ButtonLink>}
+    {links.local && (!omit || omit !== 'local') && <ButtonLink href={links.local}>{LinkLabels.local}</ButtonLink>}
+    {links.git  &&  (!omit || omit !== 'git')   && <ButtonLink href={links.git}>{LinkLabels.git}</ButtonLink>}
   </HStack>
 
 }

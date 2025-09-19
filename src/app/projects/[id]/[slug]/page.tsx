@@ -1,14 +1,15 @@
 import { Container, HStack, Tag, Text} from "@chakra-ui/react"
 import { Section } from "@/components/Section"
 import { BodyText } from "@/components/projects/BodyText"
-import PROJECTS from "@/data/projects"
+import project_data from "@/data/projects"
 import {ProjectDetails} from "@/types/Project"
-import { getProject } from "@/lib/getProject"
+import { getProject, getRelatedProjects } from "@/lib/projects"
 import ProjectLinkCollection from "@/components/projects/ProjectLinkCollection"
 import {ResponsiveVideo} from "@/components/projects/ResponsiveVideo"
+import { ButtonLink } from "@/components/ButtonLink"
 
 export const generateStaticParams = function(){
-  return PROJECTS.map(project => ({
+  return project_data.map(project => ({
     id: project.id,
     slug: project.slug
   })) 
@@ -23,6 +24,7 @@ export default async function Project({
 }) {
   const {id} = await params
   const data:ProjectDetails = getProject({id})
+  const related_data = data.relatedProjects?.length ? getRelatedProjects({id}) : []
 
   return (<Container maxWidth="3xl">
     <Section
@@ -53,10 +55,23 @@ export default async function Project({
       title="Links"
       padding={{
           x:4,
-          y:8
+          y:4
         }}
       >
         <ProjectLinkCollection omit="local" links={data.links}></ProjectLinkCollection>    
       </Section>
+    {related_data.length && <Section
+      heading="3xl" 
+      title="Related Projects"
+      padding={{
+          x:4,
+          y:4
+        }}
+      >
+        {related_data.map((r,i) => (<ButtonLink 
+          key={i} href={r.link}>{r.title}
+        </ButtonLink>))}
+      </Section>
+    }
   </Container>)
 }

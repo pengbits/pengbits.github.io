@@ -5,7 +5,7 @@ const meta:any = projects_map["1"]
 const data:ProjectDetails = {
   ...meta,
   body:[
-    `Sho.com was the marketing site for Showtime, a premium cable channel, which had 4M monthly unique visitors at it's peak. 
+    `Sho.com was the marketing site for Showtime, a premium cable channel, which had 4 million monthly unique visitors at it's peak. 
     
     While not a streaming destination like Hulu or Netflix, we represented a premium channel, so the bar was quite high for the site's design, interactions and performance.
 
@@ -25,6 +25,7 @@ const data:ProjectDetails = {
     "Component Library",
     "JavaScript/ES6",
     "CSS3",
+    "Responsive Design",
     "Showtime"
   ],
   relatedProjects: [

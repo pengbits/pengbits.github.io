@@ -1,21 +1,9 @@
-import { HStack, Button} from "@chakra-ui/react" 
+import { HStack} from "@chakra-ui/react" 
 import { ProjectLinkCollection, LinkLabels} from "@/types/Project"
-import { ReactNode } from "react"
-
+import { ButtonLink } from "@/components/ButtonLink"
 type ProjectLinkCollectionProps = {
   links?: ProjectLinkCollection,
   omit?: string
-}
-type ButtonProps = {
-  target?: string,
-  href: string,
-  children: ReactNode
-}
-const ButtonLink = ({href, children}:ButtonProps) => {
-  return (
-    <Button size="xs" variant="subtle">
-      <a target={href.indexOf('/') == 0 ? "_self":"_blank"} href={href}>{children}</a>
-    </Button>)
 }
 
 const ProjectLinkCollectionComponent = ({links,omit}:ProjectLinkCollectionProps) => {

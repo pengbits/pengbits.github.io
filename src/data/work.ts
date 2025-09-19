@@ -10,7 +10,7 @@ const work_history:Company[] = [{
     achievements: [
       "Developing a copy of the NYC parking app, using publicly-available meter data to populate a collection of REST APIs for the geospatial layer, which are consumed by a React client with a Google Maps integration. (In-progress).",
       "Built a clone of Tribeca Pediatrics' patient portal with 80% feature parity, designing and deploying REST APIs and developing a custom, mobile-optimized user experience using Shadcn components and Chart.js for data visualizations.",
-      "Completed Full-Stack Development & TypeScript modules on Codecademy.com."
+      "Completed Full-Stack Development Path on Codecademy.com."
     ]
   }],
 },{

@@ -1,17 +1,18 @@
-import { Container, List, Grid, GridItem } from "@chakra-ui/react"
+import { Container, List, Grid, GridItem, Box } from "@chakra-ui/react"
 import { Section } from "@/components/Section"
 import { ProjectGrid } from "@/components/projects/ProjectGrid"
-import PROJECTS from "@/data/projects"
-import WORK_HISTORY from "@/data/work"
-import ABOUT from "@/data/about"
-import SKILLS from "@/data/skills"
-console.log(SKILLS)
+import project_data from "@/data/projects"
+import work_history_data from "@/data/work"
+import about_data from "@/data/about"
+import skills_data from "@/data/skills"
+import {SkillsList} from "@/components/skills/SkillsList"
+
 export default function Home() {
   return (<Container maxWidth="3xl">
     <Section
       heading="6xl" 
-      title={ABOUT.name}>
-      <p>{ABOUT.tagline}</p>
+      title={about_data.name}>
+      <p>{about_data.tagline}</p>
     </Section>
     <Section
       heading="5xl" 
@@ -21,13 +22,19 @@ export default function Home() {
           y:8
         }}
       >
-      <ProjectGrid projects={PROJECTS} />
+      <ProjectGrid projects={project_data} />
+    </Section>
+    <Section
+      heading="5xl" 
+      title="Skills"
+    >
+      <SkillsList skills={skills_data.columns} />
     </Section>
     <Section
       heading="5xl" 
       title="Work Experience"
     >
-      {WORK_HISTORY.map(({name,location,roles},c) => {
+      {work_history_data.map(({name,location,roles},c) => {
         return (
         <Section
           heading="4xl" 
@@ -62,21 +69,6 @@ export default function Home() {
     </Section>
     <Section
       heading="5xl" 
-      title="Skills"
-    >
-      <Grid mt={4} templateColumns="repeat(2, 1fr)" gap="6">
-        {SKILLS.map((s,i) => {
-          return (<GridItem 
-            key={i} 
-            colSpan={{base:2, md:1}}>
-              {s.name}
-            </GridItem>
-          )
-          })}
-      </Grid>
-    </Section>
-    <Section
-      heading="5xl" 
       title="Get In Touch">
       <p>I&apos;m always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out.</p>
       <p>Email: peng.bits@gmail.com</p>
@@ -88,6 +80,5 @@ export default function Home() {
       title="&copy; Peng Bits 2025. All wrongs reversed.">
     </Section>
   </Container>
-
   )
 }

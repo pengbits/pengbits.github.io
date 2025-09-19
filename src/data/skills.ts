@@ -7,6 +7,9 @@ export const Skills:EditorializedSkill[] = [{
   name: 'JavaScript/ES6+/TypeScript',
   categories: ['Languages'],
 },{
+  name: 'Jest, React Testing Library & Vitest',
+  categories: ['Testing','Frameworks']
+},{
   name: 'HTML5/CSS3/SASS',
   categories: ['Languages']
 },{
@@ -19,9 +22,9 @@ export const Skills:EditorializedSkill[] = [{
   name: 'RESTful API Integration',
   categories: ['Methodologies']
 },{
-  name: 'Mobile-First & Responsive Design',
-  categories: ['Methodologies']
-},{
+//   name: 'Mobile-First & Responsive Design',
+//   categories: ['Methodologies']
+// },{
   name: 'Cross-Device Compatibility',
   categories: ['Methodologies']
 },{
@@ -39,4 +42,15 @@ export const Skills:EditorializedSkill[] = [{
 }]
 
 
-export default Skills
+const {length} = Skills
+const mid= Math.ceil(length /2)
+
+export const columns = {
+  a: Skills.slice(0,mid),
+  b: Skills.slice(mid)
+}
+
+export default {
+  list: Skills,
+  columns
+}

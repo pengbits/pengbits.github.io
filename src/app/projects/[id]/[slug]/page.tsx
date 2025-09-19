@@ -60,7 +60,7 @@ export default async function Project({
       >
         <ProjectLinkCollection omit="local" links={data.links}></ProjectLinkCollection>    
       </Section>
-    {related_data.length && <Section
+    {related_data.length > 0 && <Section
       heading="3xl" 
       title="Related Projects"
       padding={{

@@ -1,7 +1,7 @@
 import {EditorializedSkill} from '@/types/Skills'
 
 export const Skills:EditorializedSkill[] = [{
-  name: 'React',
+  name: 'React & Next.js',
   categories: ['Frameworks']
 },{
   name: 'JavaScript/ES6+/TypeScript',

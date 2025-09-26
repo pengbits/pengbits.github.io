@@ -9,7 +9,7 @@ export const projects_map:ProjectIndex = {
     id:"1",
     title:"Sho.com",
     slug:"sho.com",
-    description:"Full redesign of Showtime's marketing site, leveraging a Design System and reusable component library to support the build.",
+    description:"Full redesign of sho.com, the marketing site for Showtime, a premium cable chanel with 4M monthly visitors at its peak. I lead the development of a Design System with a library of 100+ reusable components to support the build.",
     primaryLink: 'local',
     links: {
       git: "https://github.com/pengbits/sho-www",
@@ -20,7 +20,7 @@ export const projects_map:ProjectIndex = {
     id:"2",
     title:"Sho.com Styleguide",
     slug:"sho.com-styleguide",
-    description:"The styleguide site serves to frame the Sho.com Design System in a useable context, provide examples of the components and foundations/primitives, and house developer, designer, and product-facing documentation.",
+    description:"The internal site for cataloging and documenting  Showtime's Design System from foundations/primitives to complex components.",
     primaryLink: 'local',
     links: {
       git: "https://github.com/pengbits/sho-styleguide",
@@ -32,7 +32,7 @@ export const projects_map:ProjectIndex = {
     id:"3",
     title:"Paige",
     slug:"paige-cms",
-    description:"A React client for a CMS with features such as composable form UI, date preview, rich-text-editor, filters, themes, and search.",
+    description:"A React client for a headless CMS with features such as composable form UI, date preview, rich-text-editor, filters, themes, and search. Heavy emphasis on TDD and Unit Testing.",
     primaryLink: 'local',
     links: {
       git: "https://github.com/pengbits/sho-paige",
@@ -54,7 +54,7 @@ export const projects_map:ProjectIndex = {
     id:"5",
     title:"Flatbush Pediatrics",
     slug:"flatbush-pediatrics",
-    description:"A clone of the Tribeca Pediatrics Patient Portal with 80% feature parity. A full-stack React app with a Node.js backend, using Shadcn components for ux and Chart.js for data visualizations.",
+    description:"A clone of the Tribeca Pediatrics Patient Portal with 80% feature parity. A full-stack React app with a Node.js backend, using Shadcn and Chart.js components for the ux and Zustand for state.",
     primaryLink: 'live',
     links: {
       git:"https://github.com/pengbits/fbpeds",
@@ -76,7 +76,7 @@ export const projects_map:ProjectIndex = {
     id:"7",
     title:"Asbo",
     slug:"asbo",
-    description:"An aggregator of a few London-based internet radio stations, built with a React/Redux frontend and a Ruby on Rails server layer. Uses nokigiri for scraping html content from multiple sources on the web, which are parsed and coerced into model collections with a unified shape.",
+    description:"An aggregator of a few internet radio stations that I was a fan of, but which lacked RSS feeds for their mix shows. It has a React/Redux frontend, Ruby on Rails backend, and uses nokigiri for scraping and parsing html content to convert into model collections.",
     primaryLink: 'git',
     links:{
       git: "https://github.com/pengbits/asbo",

@@ -21,7 +21,8 @@ export default function RootLayout({
         <Provider>
           <Nav />
           <Box as="main" mt="20"
-            border='purple solid 2px'>
+            // border='purple solid 2px'
+            >
             {children}
           </Box>
         </Provider>

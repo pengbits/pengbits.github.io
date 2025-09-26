@@ -5,8 +5,8 @@ import { ConditionalValue } from "@chakra-ui/react"
 type SectionProps = {
   marginTop?:number
   padding?:{
-    y:number,
-    x:number
+    y?:number,
+    x?:number
   },
   title:string,
   subTitle?:string,
@@ -14,15 +14,30 @@ type SectionProps = {
   description?:string,
   children?:ReactNode
 }
-const default_padding = 4
+const default_padding = {
+  x:0,
+  y:4
+}
+const SectionSubtitle = ({children}:{children:ReactNode}) => {
+  return  (<Text as="span" 
+    display={{base:'block', md:'inline'}} 
+    mb={{base: '4', md:'0'}}
+    textStyle="md">
+      {children}
+  </Text>)
+}
+
 export const Section = ({marginTop,padding,title,subTitle,heading,description,children}:SectionProps) => {
   return (<>
     <Box 
+      // outline='green solid 1px'
       mt={marginTop || 0}
-      px={padding?.x !== undefined ? padding.x : default_padding}
-      py={padding?.y !== undefined ? padding.y : default_padding}
+      // TODO just pass through padding and margin and use box api, 
+      // we don't need our own strategy and data structure for this
+      px={padding?.x !== undefined ? padding.x : default_padding.x}
+      py={padding?.y !== undefined ? padding.y : default_padding.y}
     >
-      <Heading size={heading}>{title} {subTitle && <Text as="span" textStyle="md" display={{md:"block"}}>{subTitle}</Text>}</Heading>
+      <Heading size={heading}>{title} {subTitle && <SectionSubtitle>{subTitle}</SectionSubtitle>}</Heading>
       {description && <p>{description}</p>}
       {children}
     </Box>

@@ -13,10 +13,15 @@ import skills_data from "@/data/skills"
 
 export default function Home() {
   return (
-    <Container maxWidth="3xl">
+    <Container maxWidth="3xl" 
+      // border={'purple solid 1px'}
+      >
       <Section
         heading="6xl" 
-        title={about_data.name}>
+        title={about_data.name}
+        padding={{
+          y:20
+        }}>
         <p>{about_data.tagline}</p>
       </Section>
       {/*
@@ -30,7 +35,6 @@ export default function Home() {
         heading="5xl" 
         title="Projects"
         padding={{
-            x:4,
             y:8
           }}
         >
@@ -68,7 +72,6 @@ export default function Home() {
             subTitle={location}
             key={c}
             padding={{
-              x:0,
               y:4
             }}
           >
@@ -79,7 +82,9 @@ export default function Home() {
                 title={title}
                 subTitle={`${startDate} - ${endDate}`}
                 key={r}
-                padding={{x:0,y:6}}
+                padding={{
+                  y:6
+                }}
               >
               <List.Root px={5}>
                 {achievements.map((text,a) => {

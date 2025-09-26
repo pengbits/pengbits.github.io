@@ -10,7 +10,7 @@ export const projects_map:ProjectIndex = {
     title:"Sho.com",
     slug:"sho.com",
     description:"Full redesign of sho.com, the marketing site for Showtime, a premium cable chanel with 4M monthly visitors at its peak. I lead the development of a Design System with a library of 100+ reusable components to support the build.",
-    primaryLink: 'local',
+    primaryLink: 'git',
     links: {
       git: "https://github.com/pengbits/sho-www",
       local: "/projects/1/sho.com"
@@ -21,7 +21,7 @@ export const projects_map:ProjectIndex = {
     title:"Sho.com Styleguide",
     slug:"sho.com-styleguide",
     description:"The internal site for cataloging and documenting  Showtime's Design System from foundations/primitives to complex components.",
-    primaryLink: 'local',
+    primaryLink: 'live',
     links: {
       git: "https://github.com/pengbits/sho-styleguide",
       live: "https://sho-styleguide.vercel.app/",
@@ -33,7 +33,7 @@ export const projects_map:ProjectIndex = {
     title:"Paige",
     slug:"paige-cms",
     description:"A React client for a headless CMS with features such as composable form UI, date preview, rich-text-editor, filters, themes, and search. Heavy emphasis on TDD and Unit Testing.",
-    primaryLink: 'local',
+    primaryLink: 'git',
     links: {
       git: "https://github.com/pengbits/sho-paige",
       local: "/projects/3/paige-cms"
@@ -45,7 +45,7 @@ export const projects_map:ProjectIndex = {
     slug:"otto",
     description:"A data warehouse built in AWS, facilitating a better understanding of customer acquisition through large scale data extraction and analysis.",
     draft:true,
-    primaryLink: 'local',
+    primaryLink: 'git',
     links: {
       local: "/projects/4/otto"
     }

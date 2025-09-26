@@ -1,0 +1,27 @@
+.contact-links {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-around;
+}
+.contact-links li a {
+  padding: 2rem;
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  background: transparent no-repeat url(/images/svg/github.svg) center center;
+  background-size: 3rem;
+  border-radius: 1rem;
+}
+
+.contact-links li.email a {
+  background-image: url(/images/svg/email.svg) ;
+}
+
+.contact-links li.linkedin a {
+  background-image: url(/images/svg/linkedin.svg) ;
+}
+
+.contact-links li:hover a,
+.contact-links li:active a {
+  background-color: #F1F1F1;
+}

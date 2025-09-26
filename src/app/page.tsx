@@ -5,6 +5,7 @@ import { Section } from "@/components/Section"
 import { ProjectGrid } from "@/components/projects/ProjectGrid"
 import { SkillsList } from "@/components/skills/SkillsList"
 import { SectionAnchor } from "@/components/SectionAnchor"
+import { ContactLinks } from "@/components/contact/ContactLinks"
 // data
 import project_data from "@/data/projects"
 import work_history_data from "@/data/work"
@@ -107,17 +108,9 @@ export default function Home() {
       </SectionAnchor>
       <Section
         heading="5xl" 
-        title="Get In Touch">
-        <Flex>
-          <Box flexBasis="1/2">
-            <p>I&apos;m always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out.</p>
-          </Box>
-          <Box flexBasis="1/2">
-            <p>Email: peng.bits@gmail.com</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/davepaul">linkedin.com/in/davepaul</a></p>
-            <p>Github: <a href="https://github.com/pengbits">pengbits</a></p>
-          </Box>
-        </Flex>
+        title="Get In Touch"> 
+          <p>I&apos;m always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out.</p>
+          <ContactLinks />
       </Section>
       <Section heading="xs"
         marginTop={20}

@@ -3,6 +3,7 @@
   height:32px;
   width: 32px;
   /* was chakra-size-8 aka 2rem (1 rem = 16px)*/
+  cursor: pointer;
 }
 
 .icon span {

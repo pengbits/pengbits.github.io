@@ -1,5 +1,5 @@
 // vendor
-import { Container, List } from "@chakra-ui/react"
+import { Container, List, Flex, Box } from "@chakra-ui/react"
 // components
 import { Section } from "@/components/Section"
 import { ProjectGrid } from "@/components/projects/ProjectGrid"
@@ -108,10 +108,16 @@ export default function Home() {
       <Section
         heading="5xl" 
         title="Get In Touch">
-        <p>I&apos;m always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out.</p>
-        <p>Email: peng.bits@gmail.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/davepaul">linkedin.com/in/davepaul</a></p>
-        <p>Github: <a href="https://github.com/pengbits">pengbits</a></p>
+        <Flex>
+          <Box flexBasis="1/2">
+            <p>I&apos;m always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out.</p>
+          </Box>
+          <Box flexBasis="1/2">
+            <p>Email: peng.bits@gmail.com</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/davepaul">linkedin.com/in/davepaul</a></p>
+            <p>Github: <a href="https://github.com/pengbits">pengbits</a></p>
+          </Box>
+        </Flex>
       </Section>
       <Section heading="xs"
         marginTop={20}

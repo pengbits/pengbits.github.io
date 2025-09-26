@@ -34,7 +34,7 @@ export type Project = {
 export type ProjectDetails = {
   id: string,
   title: string,
-  slug: string,
+  slug?: string,
   body: string[],
   links?: ProjectLinkCollection,
   images?: string[],

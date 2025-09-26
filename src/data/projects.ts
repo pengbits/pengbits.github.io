@@ -32,7 +32,7 @@ export const projects_map:ProjectIndex = {
     id:"3",
     title:"Paige",
     slug:"paige-cms",
-    description:"A React client for a headless CMS with features such as composable form UI, date preview, rich-text-editor, filters, themes, and search. Heavy emphasis on TDD and Unit Testing.",
+    description:"A React client for a headless CMS with features such as composable form UI, date preview, rich-text-editor, filters, themes, and search. Heavily informed by principles of Test-Driven and Behavioral-Driven Development.",
     primaryLink: 'git',
     links: {
       git: "https://github.com/pengbits/sho-paige",

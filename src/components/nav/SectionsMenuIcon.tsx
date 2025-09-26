@@ -1,11 +1,8 @@
 import { Box } from "@chakra-ui/react"
+import styles from "./SectionsMenuIcon.module.css"
 export const SectionsMenuIcon = () => (
- <Box 
-    h='8' 
-    w='8' 
-    position='relative'
-    outline='purple solid 1px'
-    background='#F1F1F1'
+ <Box
+    className={styles.icon} 
   >
     <span></span>
     <span></span>

@@ -7,7 +7,7 @@ import { SectionsHorizontal } from "./SectionsHorizontal"
 export const Nav = () => (
   <Box as="header" zIndex='200' position="fixed" h='18' top='0' w="100%" 
     background="white" 
-    outline='purple solid 1px'
+    // outline='purple solid 1px'
     borderBottom='black solid 2px'
   >
     <Container as="nav" maxW="3xl">

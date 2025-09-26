@@ -11,7 +11,9 @@ const data:ProjectDetails = {
 
     In the last iteration of the site, I pitched the use of a Design System and a reusable component library to support the build, allowing us to build features 2-3x faster than with a conventional page-based approach. This meant we could scale the site to support numerous devices/screen sizes while enforcing consistency and delivering an impactful, high-quality user experience.`
   ,  
-   `The use of a Design System dramatically improved cross-functional collaboration with the Design and Product teams, as we gained a common language for discussing new and existing functionality, and it freed up a lot of dev and design cycles as we didn't need to reinvent the wheel every time we wanted to support a new series or implement a new feature.`
+   `The use of a Design System dramatically improved cross-functional collaboration with the Design and Product teams, as we gained a common language for discussing new and existing functionality, and it freed up a lot of dev and design cycles because we didn't need to reinvent the wheel every time we wanted to support a new series or implement a new feature. It was definitely an uphill battle to convince some of the senior stakeholders to try a totally different approach to development and design, but I kept at it and won them over in the end!`,
+   
+   `This site is no longer live as it was retired when Showtime was aquired by Paramount Global.`
   
   
   ],

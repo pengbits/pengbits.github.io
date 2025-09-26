@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import { Provider } from "@/components/ui/provider";
 import { Box } from "@chakra-ui/react"
-import { Nav } from "@/components/Nav";
+import Nav from "@/components/nav";
 import "./globals.css";
 
 export const metadata: Metadata = {

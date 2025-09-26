@@ -1,7 +1,7 @@
 import {Heading, Text, Box } from "@chakra-ui/react"
 import {ReactNode} from "react"
 import { ConditionalValue } from "@chakra-ui/react"
-
+    
 type SectionProps = {
   marginTop?:number
   padding?:{
@@ -16,7 +16,7 @@ type SectionProps = {
 }
 const default_padding = 4
 export const Section = ({marginTop,padding,title,subTitle,heading,description,children}:SectionProps) => {
-  return (
+  return (<>
     <Box 
       mt={marginTop || 0}
       px={padding?.x !== undefined ? padding.x : default_padding}
@@ -26,5 +26,5 @@ export const Section = ({marginTop,padding,title,subTitle,heading,description,ch
       {description && <p>{description}</p>}
       {children}
     </Box>
-) 
+  </>) 
 }

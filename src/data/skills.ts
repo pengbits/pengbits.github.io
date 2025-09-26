@@ -49,8 +49,8 @@ export const columns = {
   a: Skills.slice(0,mid),
   b: Skills.slice(mid)
 }
-
-export default {
+const SkillsData = {
   list: Skills,
   columns
 }
+export default SkillsData

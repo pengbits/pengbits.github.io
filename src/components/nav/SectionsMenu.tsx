@@ -1,14 +1,10 @@
 
 import { Box, Menu, Portal } from "@chakra-ui/react"
 import { SectionsMenuIcon } from "./SectionsMenuIcon"
-import { Section } from "@/types/Section"
+import { SectionNavigationProps } from "@/types/Section"
 
-type SectionsMenuProps = {
-  sections: Section[],
-  display: any
-}
 
-export const SectionsMenu = ({sections, display}:SectionsMenuProps) => (
+export const SectionsMenu = ({sections, display}:SectionNavigationProps) => (
   <Box display={display}>
     <Menu.Root>
       <Menu.Trigger asChild>

@@ -1,6 +1,6 @@
 import { Project,ProjectDetails } from "@/types/Project";
 import {projects_map} from "@/data/projects";
-const meta:any = projects_map["1"]
+const meta:Project = projects_map["1"]
 
 const data:ProjectDetails = {
   ...meta,

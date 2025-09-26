@@ -1,4 +1,4 @@
-import { Container, HStack, Tag, Text} from "@chakra-ui/react"
+import { Container, HStack, Tag} from "@chakra-ui/react"
 import { Section } from "@/components/Section"
 import { BodyText } from "@/components/projects/BodyText"
 import project_data from "@/data/projects"

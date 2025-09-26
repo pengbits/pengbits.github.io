@@ -1,15 +1,7 @@
 import { Flex, Box } from "@chakra-ui/react"
-import { ConditionalValue } from "@chakra-ui/react"
-import { Section } from "@/types/Section"
-// TODO pass in display props
-type SectionsHorizontalProps = {
-  sections: Section[],
-  display?: any
-}
-export const SectionsHorizontal = ({
-  sections,
-  display
-}:SectionsHorizontalProps) => (
+import { SectionNavigationProps } from "@/types/Section"
+
+export const SectionsHorizontal = ({sections,display}:SectionNavigationProps) => (
   <Flex 
     as="ul" justify="flex-end"
     display={display}

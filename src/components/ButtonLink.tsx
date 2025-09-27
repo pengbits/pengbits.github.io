@@ -1,5 +1,7 @@
 import { ReactNode } from "react"
 import { Button } from "@chakra-ui/react"
+import { targetForPath } from "@/lib/links";
+
 type ButtonProps = {
   target?: string,
   href: string,
@@ -9,6 +11,6 @@ type ButtonProps = {
 export const ButtonLink = ({href, children}:ButtonProps) => {
   return (
     <Button size="xs" variant="subtle">
-      <a target={href.indexOf('/') == 0 ? "_self":"_blank"} href={href}>{children}</a>
+      <a target={targetForPath(href)} href={href}>{children}</a>
     </Button>)
 }

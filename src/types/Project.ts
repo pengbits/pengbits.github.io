@@ -25,6 +25,7 @@ export type Project = {
   description?: string,
   current?: boolean,
   draft?:boolean,
+  image?:string,
   video?:VideoSourceSet,
   links?: ProjectLinkCollection,
   primaryLink?: LinkType,

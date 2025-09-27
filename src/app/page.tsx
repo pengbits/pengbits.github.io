@@ -1,5 +1,5 @@
 // vendor
-import { Container, List, Flex, Box } from "@chakra-ui/react"
+import { Container, List } from "@chakra-ui/react"
 // components
 import { Section } from "@/components/Section"
 import { ProjectGrid } from "@/components/projects/ProjectGrid"

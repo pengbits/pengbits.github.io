@@ -20,6 +20,13 @@ const data:ProjectDetails = {
 
     `One of my favorite things about this project was that I was able to use it as test case for bringing in Test-Driven-Development with Jest and Cucumber. I had been learning about TDD on my own, but we had not used it on the frontend team. This resulted in higher code quality, and richer in-code documentation around the business logic.`
   ],
+  images: [{
+    base: "/paige-cms/paige_00_390x780.jpg",
+    md:   "/paige-cms/paige_00_1024x768.jpg"
+  },{
+    base: "/paige-cms/paige_01_390x780.jpg",
+    md:   "/paige-cms/paige_01_1024x768.jpg"
+  }],
   tags:[
     "CMS",
     "React",

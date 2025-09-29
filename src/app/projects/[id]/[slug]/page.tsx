@@ -1,12 +1,14 @@
-import { Container, HStack, Tag} from "@chakra-ui/react"
+import { Container, HStack, Tag, Image} from "@chakra-ui/react"
 import { Section } from "@/components/Section"
 import { BodyText } from "@/components/projects/BodyText"
-import project_data from "@/data/projects"
-import {ProjectDetails} from "@/types/Project"
-import { getProject, getRelatedProjects } from "@/lib/projects"
 import ProjectLinkCollection from "@/components/projects/ProjectLinkCollection"
-import {ResponsiveVideo} from "@/components/projects/ResponsiveVideo"
+import { ResponsiveVideo } from "@/components/projects/ResponsiveVideo"
+import { ResponsiveImage } from "@/components/projects/ResponsiveImage"
 import { ButtonLink } from "@/components/ButtonLink"
+
+import project_data from "@/data/projects"
+import { ProjectDetails } from "@/types/Project"
+import { getProject, getRelatedProjects } from "@/lib/projects"
 
 export const generateStaticParams = function(){
   return project_data.map(project => ({
@@ -30,9 +32,30 @@ export default async function Project({
     <Section
       heading="5xl" 
       title={data.title}
-      padding={{x:4,y:32}}
+      padding={{x:4}}
+    ></Section>
+    
+    {data.images?.length && <Section
+      heading="3xl"
+      title=""
+      padding={{x:4}}
     >
-      {data.video && <ResponsiveVideo src={data.video} />}
+      {data.images.map((src,i) => (
+        <ResponsiveImage key={i} src={src} />
+      ))}
+    </Section>}
+
+    {data.video && <Section
+      heading="3xl"
+      title=""
+      padding={{x:4}}>
+      <ResponsiveVideo src={data.video} />
+    </Section>
+    }
+    <Section
+      heading="3xl" 
+      padding={{x:4}}
+      title="About">
       <BodyText body={data.body} />
     </Section>
     <Section

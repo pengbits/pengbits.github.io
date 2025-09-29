@@ -6,7 +6,7 @@ type ResponsiveVideoProps = {
 }
 export const ResponsiveVideo = ({src:{desktop,mobile}}:ResponsiveVideoProps) => {
   return (<Box mb={4}>
-    {desktop && <Box display={{base:'none',lg:'block'}}><Video src={desktop} aspect='landscape'  /></Box>}
-    {mobile &&  <Box display={{base:'block',lg:'none'}}><Video src={mobile} aspect='portrait'     /></Box>}
+    {desktop && <Box display={{base:'none', md:'block'}}><Video src={desktop} aspect='landscape'  /></Box>}
+    {mobile &&  <Box display={{base:'block',md:'none'}}><Video src={mobile} aspect='portrait'     /></Box>}
   </Box>)
 }

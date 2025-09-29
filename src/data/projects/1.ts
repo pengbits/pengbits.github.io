@@ -22,6 +22,12 @@ const data:ProjectDetails = {
     desktop:  "https://www.loom.com/embed/e6e722d28216472581dfd864b28414e3?sid=da6063f8-9303-4823-9696-694c6de55cc6",
     mobile:   "https://www.loom.com/embed/d461abaac8414ca9a8525312397a44cd?sid=ca855c94-839a-4cfd-970f-c4a5f12d2fbe" 
   },
+  images: [
+    {
+      base: "/sho.com/home_00_390x780.jpg",
+      md:   "/sho.com/home_00_1024x768.jpg",
+    }
+  ],
   tags:[
     "Design System",
     "Component Library",

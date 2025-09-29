@@ -32,13 +32,17 @@ export type Project = {
   status?: "in-progress | archived | live"
 }
 
+export type ImageSrcSet = {
+  base: string,
+  md: string
+}
 export type ProjectDetails = {
   id: string,
   title: string,
   slug?: string,
   body: string[],
   links?: ProjectLinkCollection,
-  images?: string[],
+  images?: ImageSrcSet[],
   video?: VideoSourceSet,
   tags?: string[],
   relatedProjects? : string[]

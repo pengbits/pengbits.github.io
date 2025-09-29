@@ -59,7 +59,7 @@ export const projects_map:ProjectIndex = {
     slug:"flatbush-pediatrics",
     description:"A clone of the Tribeca Pediatrics Patient Portal with 80% feature parity. A full-stack React app with a Node.js backend, using Shadcn and Chart.js components for the ux and Zustand for state.",
     primaryLink: 'live',
-    image: "/fbpeds/fbpeds_00_512x384.jpg",
+    image: "/fbpeds/fbpeds_01_512x384.jpg",
     links: {
       git:"https://github.com/pengbits/fbpeds",
       live: "https://fbpeds.onrender.com/",

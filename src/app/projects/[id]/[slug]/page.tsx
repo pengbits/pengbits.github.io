@@ -1,5 +1,6 @@
-import { Container, HStack, Tag, Image} from "@chakra-ui/react"
+import { Container, HStack, Tag } from "@chakra-ui/react"
 import { Section } from "@/components/Section"
+import { Highlights } from "@/components/projects/Highlights"
 import { BodyText } from "@/components/projects/BodyText"
 import ProjectLinkCollection from "@/components/projects/ProjectLinkCollection"
 import { ResponsiveVideo } from "@/components/projects/ResponsiveVideo"
@@ -32,13 +33,11 @@ export default async function Project({
     <Section
       heading="5xl" 
       title={data.title}
-      padding={{x:4}}
     ></Section>
     
     {data.images?.length && <Section
       heading="3xl"
       title=""
-      padding={{x:4}}
     >
       {data.images.map((src,i) => (
         <ResponsiveImage key={i} src={src} />
@@ -47,24 +46,23 @@ export default async function Project({
 
     {data.video && <Section
       heading="3xl"
-      title=""
-      padding={{x:4}}>
+      title="">
       <ResponsiveVideo src={data.video} />
     </Section>
     }
+    {data.highlights?.length && <Section
+      heading="3xl" 
+      title="Highlights">
+      <Highlights data={data.highlights} />
+    </Section>}
     <Section
       heading="3xl" 
-      padding={{x:4}}
       title="About">
       <BodyText body={data.body} />
     </Section>
     <Section
-      heading="3xl" 
+      heading="3xl"
       title="Tags"
-      padding={{
-          x:4,
-          y:8
-        }}
       >
         <HStack>
           {data.tags?.map((t,i) => (<Tag.Root  key={i}>
@@ -77,7 +75,6 @@ export default async function Project({
       heading="3xl" 
       title="Links"
       padding={{
-          x:4,
           y:4
         }}
       >
@@ -87,7 +84,6 @@ export default async function Project({
       heading="3xl" 
       title="Related Projects"
       padding={{
-          x:4,
           y:4
         }}
       >

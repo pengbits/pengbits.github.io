@@ -10,7 +10,7 @@ export const projects_map:ProjectIndex = {
     title:"Sho.com",
     slug:"sho.com",
     description:"Full redesign of sho.com, the marketing site for Showtime, a premium cable channel with 4M monthly visitors at its peak. I lead the development of a Design System with a library of 100+ reusable components to support the build.",
-    primaryLink: 'git',
+    primaryLink: 'local',
     image: "/sho.com/home_00_512x384.jpg",
     links: {
       git: "https://github.com/pengbits/sho-www",
@@ -22,7 +22,7 @@ export const projects_map:ProjectIndex = {
     title:"Sho.com Styleguide",
     slug:"sho.com-styleguide",
     description:"The internal site for cataloging and documenting  Showtime's Design System, featuring everything from foundations/primitives to complex components.",
-    primaryLink: 'live',
+    primaryLink: 'local',
     image: "/styleguide/styleguide_00_512x384.jpg",
     links: {
       git: "https://github.com/pengbits/sho-styleguide",
@@ -35,7 +35,7 @@ export const projects_map:ProjectIndex = {
     title:"Paige",
     slug:"paige-cms",
     description:"A React client for a headless CMS with features such as composable form UI, date preview, rich-text-editor, filters, themes, and search. Heavily informed by principles of Test-Driven and Behavioral-Driven Development.",
-    primaryLink: 'git',
+    primaryLink: 'local',
     image: "/paige-cms/paige_00_512x384.jpg",
     links: {
       git: "https://github.com/pengbits/sho-paige",
@@ -63,7 +63,6 @@ export const projects_map:ProjectIndex = {
     links: {
       git:"https://github.com/pengbits/fbpeds",
       live: "https://fbpeds.onrender.com/",
-      local: "/projects/5/flatbush-pediatrics"
     }
   },
   "6" : {
@@ -80,7 +79,7 @@ export const projects_map:ProjectIndex = {
     id:"7",
     title:"Asbo",
     slug:"asbo",
-    description:"An aggregator of a few internet radio stations that I was a fan of, but which lacked RSS feeds for their mix shows. It has a React/Redux frontend, Ruby on Rails backend, and uses nokigiri for scraping and parsing html content to convert into model collections.",
+    description:"An aggregator of a few internet radio stations that I was a fan of, but which lacked RSS feeds for their mix shows. It has a React/Redux frontend, Ruby on Rails backend, and uses Nokigiri for scraping and parsing html content to populate the models.",
     primaryLink: 'git',
     links:{
       git: "https://github.com/pengbits/asbo",

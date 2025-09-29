@@ -12,7 +12,7 @@ export const Nav = () => (
   >
     <Container as="nav" maxW="3xl">
       <Flex justifyContent="space-between" alignItems='center' py="4">
-        <Text flexBasis="1/2" as="h1" py="2">&copy; Peng Bits</Text>
+        <Text flexBasis="1/2" as="h1" py="2"><a href="/">&copy; Peng Bits</a></Text>
         <SectionsHorizontal 
           display={{base:'none', md:'flex'}} sections={sections_data}>
         </SectionsHorizontal>

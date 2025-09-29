@@ -57,7 +57,7 @@ export const projects_map:ProjectIndex = {
     id:"5",
     title:"Flatbush Pediatrics",
     slug:"flatbush-pediatrics",
-    description:"A clone of the Tribeca Pediatrics Patient Portal with 80% feature parity. A full-stack React app with a Node.js backend, using Shadcn and Chart.js components for the ux and Zustand for state.",
+    description:"A clone of the Tribeca Pediatrics Patient Portal with 80% feature parity. I built the view in React using Shadcn and Chart.js for the ux and Zustand for state. For the backend, I scraped patient data, loaded it into an original schema, and served it with Node.js/Express services.",
     primaryLink: 'live',
     image: "/fbpeds/fbpeds_01_512x384.jpg",
     links: {

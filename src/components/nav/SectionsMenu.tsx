@@ -2,7 +2,7 @@
 import { Box, Menu, Portal } from "@chakra-ui/react"
 import { SectionsMenuIcon } from "./SectionsMenuIcon"
 import { SectionNavigationProps } from "@/types/Section"
-
+const base_url = '/'
 
 export const SectionsMenu = ({sections, display}:SectionNavigationProps) => (
   <Box display={display}>
@@ -20,7 +20,7 @@ export const SectionsMenu = ({sections, display}:SectionNavigationProps) => (
               key={s.id} 
               value={s.id}
             >
-              <a href={`#${s.id}`} title={label}>{label}</a>
+              <a href={`${base_url}#${s.id}`} title={label}>{label}</a>
             </Menu.Item>)
           })}
           </Menu.Content>

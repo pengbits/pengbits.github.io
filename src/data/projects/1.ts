@@ -4,6 +4,11 @@ const meta:Project = projects_map["1"]
 
 const data:ProjectDetails = {
   ...meta,
+  highlights: [
+    `Championed the use of design systems, improving cross-functional collaboration.`,
+    `Implemented a library of 100+ reusable components, accelerating development by 2-3x.`,
+    `Lead development of a consistent, responsive, visually impactful user experience. `
+  ],
   body:[
     `Sho.com was the marketing site for Showtime, a premium cable channel, which had 4 million monthly unique visitors at it's peak. 
     
@@ -14,8 +19,6 @@ const data:ProjectDetails = {
    `The use of a Design System dramatically improved cross-functional collaboration with the Design and Product teams, as we gained a common language for discussing new and existing functionality, and it freed up a lot of dev and design cycles because we didn't need to reinvent the wheel every time we wanted to support a new series or implement a new feature. It was definitely an uphill battle to convince some of the senior stakeholders to try a totally different approach to development and design, but I kept at it and won them over in the end!`,
    
    `This site is no longer live as it was retired when Showtime was aquired by Paramount Global.`
-  
-  
   ],
   video:{
     title: 'Sho.com Homepage',

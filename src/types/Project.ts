@@ -36,11 +36,14 @@ export type ImageSrcSet = {
   base: string,
   md: string
 }
+
+
 export type ProjectDetails = {
   id: string,
   title: string,
   slug?: string,
   body: string[],
+  highlights?: string[],
   links?: ProjectLinkCollection,
   images?: ImageSrcSet[],
   video?: VideoSourceSet,

@@ -28,6 +28,7 @@ export const ProjectGridItem = ({
 
   return (<GridItem  
     colSpan={{base:2, md:1}}
+    mb='16'
   >
     {image && <LinkedImage src={image} href={links && primaryLink ? links[primaryLink] : undefined} />}
     {primaryLink && links ? 

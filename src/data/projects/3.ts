@@ -4,6 +4,12 @@ const meta:Project = projects_map["3"]
 
 const data:ProjectDetails = {
   ...meta,
+  highlights: [
+    `Developed a client for a headless CMS with features such as composable form UI, date preview, rich-text-editor, filters and themes.`, 
+    `Built support for 500+ promotions, 50+ campaigns, and 20+ form types.`,
+    `Worked closely with Backend team to integrate RESTful APIs.`,
+    `Introduced Test-Driven Development to Frontend Team, improving code quality.`
+  ],
   body:[
     `In addition to working on the public-facing marketing site for Showtime, I built a number of admin/publishing tools to support the Editorial team.
     Paige was a client for a headless CMS, to be used for authoring and managing promotional content on the site. It was written in React, with Redux for state management, and backed by a series of RESTful apis.

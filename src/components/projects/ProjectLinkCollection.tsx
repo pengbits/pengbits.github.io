@@ -11,7 +11,7 @@ const ProjectLinkCollectionComponent = ({links,omit}:ProjectLinkCollectionProps)
   if(!links) return null
   return <HStack>
     {links.live &&  (!omit || omit !== 'live')  && <ButtonLink href={links.live}>{LinkLabels.live}</ButtonLink>}
-    {/* {links.local && (!omit || omit !== 'local') && <ButtonLink href={links.local}>{LinkLabels.local}</ButtonLink>} */}
+    {links.local && (!omit || omit !== 'local') && <ButtonLink href={links.local}>{LinkLabels.local}</ButtonLink>}
     {links.git  &&  (!omit || omit !== 'git')   && <ButtonLink href={links.git}>{LinkLabels.git}</ButtonLink>}
   </HStack>
 

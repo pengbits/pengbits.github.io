@@ -1,10 +1,11 @@
-
 import { Box, Menu, Portal } from "@chakra-ui/react"
-import { SectionsMenuIcon } from "./SectionsMenuIcon"
 import { SectionNavigationProps } from "@/types/Section"
+import { SectionsMenuIcon } from "./SectionsMenuIcon"
+import { ThemeSwitcherMenuItem } from "./ThemeSwitcherMenuItem"
 const base_url = '/'
 
-export const SectionsMenu = ({sections, display}:SectionNavigationProps) => (
+export const SectionsMenu = ({sections, display}:SectionNavigationProps) => {
+  return (
   <Box display={display}>
     <Menu.Root>
       <Menu.Trigger asChild>
@@ -23,9 +24,12 @@ export const SectionsMenu = ({sections, display}:SectionNavigationProps) => (
               <a href={`${base_url}#${s.id}`} title={label}>{label}</a>
             </Menu.Item>)
           })}
+          <Menu.Separator />
+          <ThemeSwitcherMenuItem />
           </Menu.Content>
         </Menu.Positioner>
       </Portal>
     </Menu.Root>
   </Box>
 )
+}

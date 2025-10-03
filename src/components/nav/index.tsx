@@ -6,9 +6,10 @@ import Link from "next/link"
 
 export const Nav = () => (
   <Box as="header" zIndex='200' position="fixed" h='18' top='0' w="100%" 
-    background="white" 
+    background={{base:"white", _dark:"black"}}
     // outline='purple solid 1px'
     borderBottom='black solid 2px'
+    borderColor={{base:"black", _dark:"white"}}
   >
     <Container as="nav" maxW="3xl">
       <Flex justifyContent="space-between" alignItems='center' py="4">
@@ -16,10 +17,12 @@ export const Nav = () => (
           <Link href="/">&copy; Peng Bits</Link>
         </Text>
         <SectionsHorizontal 
-          display={{base:'none', md:'flex'}} sections={sections_data}>
+          display={{base:'none', md:'flex'}} 
+          sections={sections_data}>
         </SectionsHorizontal>
         <SectionsMenu 
-          display={{base:'block',md:'none'}} sections={sections_data}>
+          display={{base:'block',md:'none'}} 
+          sections={sections_data}>
         </SectionsMenu>
       </Flex>
     </Container>

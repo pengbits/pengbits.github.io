@@ -9,7 +9,7 @@
 .icon span {
   display: block;
   position: absolute;
-  background: #09090B; /* chakra-colors-fg */
+  /* background-color: #09090B; chakra-colors-fg */
   width: 100%;
   height: 4px;
   top:5px
@@ -21,4 +21,7 @@
 
 .icon span:nth-child(3) {
   top: 23px;
+}
+
+.dark .icon .span {
 }

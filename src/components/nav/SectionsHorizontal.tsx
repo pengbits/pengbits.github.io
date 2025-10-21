@@ -2,7 +2,7 @@ import { Flex, Box } from "@chakra-ui/react"
 import { ColorModeButton } from "@/components/ui/color-mode"
 import { SectionNavigationProps } from "@/types/Section"
 const base_url = '/'
-export const SectionsHorizontal = ({sections,display,appendItem}:SectionNavigationProps) => {
+export const SectionsHorizontal = ({sections,display}:SectionNavigationProps) => {
     return (<Flex 
       as="ul" justify="flex-end"
       display={display}

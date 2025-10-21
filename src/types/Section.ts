@@ -1,5 +1,3 @@
-import { ReactNode } from "react"
-
 export type Section = {
   title: string,
   titleShort?: string,
@@ -9,7 +7,6 @@ export type Section = {
 // TODO should not have to redefine chakra's breakpoints like this
 export type SectionNavigationProps = {
   sections: Section[],
-  appendItem?: Function,
   display?: {
     'base'?:string,
     'md'?:string,

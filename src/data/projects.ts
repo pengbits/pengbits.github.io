@@ -71,9 +71,11 @@ export const projects_map:ProjectIndex = {
     title:"Park.me",
     slug:"park.me",
     description:"A copy of the NYC parking app, using publicly-available meter data to populate a collection of REST APIs for the geospatial layer, which are consumed by a React client with a Google Maps integration. (In-progress).",
-    primaryLink: 'git',
+    primaryLink: 'local',
+    image: "/park.me/00_512x384.jpg",
     links: {
-      git: "https://github.com/pengbits/park.me"
+      git: "https://github.com/pengbits/park.me",
+      local: "/projects/6/park.me"
     }
   },
   "7" : {

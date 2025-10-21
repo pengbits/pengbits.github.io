@@ -4,17 +4,37 @@ const meta:Project = projects_map["5"]
 
 const data:ProjectDetails = {
   ...meta,
-  body:[
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet fermentum lectus. Cras eget viverra turpis. Sed tellus risus, vulputate sed tincidunt vitae, scelerisque ut dolor. Donec feugiat enim vitae lorem laoreet tristique. Ut arcu lorem, facilisis at tempus sit amet, vestibulum in enim. Vestibulum porta, sapien eu mollis commodo, sapien dui maximus justo, vitae varius neque erat non nisi. Aliquam ultricies interdum maximus. In hac habitasse platea dictumst. Quisque ligula lectus, elementum in eros ut, malesuada eleifend ligula. Suspendisse condimentum sit amet velit nec placerat. Cras nec odio ligula. Phasellus vitae ultrices arcu. Phasellus sem erat, facilisis et varius quis, ullamcorper vel purus. Cras a felis varius, scelerisque nunc consectetur, placerat dolor. Duis nisl sem, aliquam eu sem ut, volutpat feugiat turpis.",
-    "Curabitur pulvinar, nisl varius pulvinar scelerisque, dolor ante pulvinar mauris, at rutrum urna velit vel ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce finibus metus quis erat lobortis, ac porta diam convallis. In feugiat sagittis neque, in feugiat leo cursus et. Suspendisse a lorem ac mi placerat ornare eu vitae libero. Donec pellentesque finibus aliquet. Pellentesque quis justo iaculis, convallis neque sed, scelerisque justo. Donec efficitur neque ac lectus rutrum, quis varius sapien suscipit. Fusce hendrerit nibh ac urna commodo, id faucibus libero viverra. Praesent eu elit turpis. Proin vestibulum dolor id nibh vehicula viverra. Fusce vitae bibendum erat, at aliquam dolor."
+  highlights: [
+    `A clone of Tribeca Pediatrics' patient portal with 80% feature parity, reimagined as a responsive, playful, single-page-app.`, 
+    `Designed a new database schema and backend, populated with scraped patient data.`,
+    `Implemented REST APIs in Node.js and an Authentication/Signup Flow with Passport.`,
+    `Built a mobile-optimized ux with React and Shadcn, Zustand for state management and Chart.js for data visualizations.`
   ],
+  body:[
+    "I was looking for a good sandbox project to flex my full-stack muscles on, and I came across the Tribeca Pediatrics patient portal. I wanted to reimagine the user experience as something more whimiscal, less fussy, but with all of the core functionality intact. I was attracted to the challenge of modeling the patient data and capturing the relationships, and utilizing Chart.js to render the growth charts accurately. I sourced the data from my own kids' records, scraping the output of Tribeca's growth chart services, and using it to populate the database. I also pulled some content on a few of the healthcare providers in order to flesh out their profile pages. ",
+    "I used the Shadcn ui framework, which provided some of the components, lending a bit of polish to the buttons, dropdowns and form inputs. The rest of the design was a mashup of pediatric-themed sketches from dribbble."
+  ],
+  images: [{
+    base: "/fbpeds/fbpeds-01-login_390x780.jpg",
+    md:   "/fbpeds/fbpeds-01-login_1024x768.jpg"
+  },{
+    base: "/fbpeds/fbpeds-01-listing_390x780.jpg",
+    md:   "/fbpeds/fbpeds-01-listing_1024x768.jpg"
+  },{
+    base: "/fbpeds/fbpeds-02-create-appt_390x780.jpg",
+    md:   "/fbpeds/fbpeds-02-create-appt_1024x768.jpg"
+  },{
+    base: "/fbpeds/fbpeds-03-chart_390x780.jpg",
+    md:   "/fbpeds/fbpeds_01_1024x768.jpg"
+  }],
   tags:[
     "React",
+    "Zustand",
     "Shadcn",
+    "Chart.js",
     "JavaScript/ES6",
     "CSS3",
     "Mobile-first",
-    "Personal"
   ]
 }
 export default data

@@ -58,18 +58,19 @@ export const projects_map:ProjectIndex = {
     title:"Flatbush Pediatrics",
     slug:"flatbush-pediatrics",
     description:"A clone of the Tribeca Pediatrics Patient Portal with 80% feature parity. I built the view in React using Shadcn and Chart.js for the ux and Zustand for state. For the backend, I scraped patient data, loaded it into an original schema, and served it with Node.js/Express services.",
-    primaryLink: 'live',
+    primaryLink: 'local',
     image: "/fbpeds/fbpeds_01_512x384.jpg",
     links: {
       git:"https://github.com/pengbits/fbpeds",
       live: "https://fbpeds.onrender.com/",
+      local: "/projects/5/flatbush-pediatrics"
     }
   },
   "6" : {
     id:"6",
     title:"Park.me",
     slug:"park.me",
-    description:"A copy of the NYC parking app, using publicly-available meter data to populate a collection of REST APIs for the geospatial layer, which are consumed by a React client with a Google Maps integration. In-progress).",
+    description:"A copy of the NYC parking app, using publicly-available meter data to populate a collection of REST APIs for the geospatial layer, which are consumed by a React client with a Google Maps integration. (In-progress).",
     primaryLink: 'git',
     links: {
       git: "https://github.com/pengbits/park.me"

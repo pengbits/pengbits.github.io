@@ -15,6 +15,9 @@ const LinkedImage = ({src,href}:{src:string, href?:string}) => (
       htmlWidth={512}
       htmlHeight={384}
       alt="primary image of the project"
+      borderColor="gray.400"
+      borderWidth="1px"
+      borderStyle="solid"
     />
   </Link>
 )

@@ -4,10 +4,16 @@ const meta:Project = projects_map["7"]
 
 const data:ProjectDetails = {
   ...meta,
+  images: [{
+    base: "/asbo/asbo_00_512x384.png",
+    md:   "/asbo/asbo_00_1024x768.png"
+  }],
   body:[
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet fermentum lectus. Cras eget viverra turpis. Sed tellus risus, vulputate sed tincidunt vitae, scelerisque ut dolor. Donec feugiat enim vitae lorem laoreet tristique. Ut arcu lorem, facilisis at tempus sit amet, vestibulum in enim. Vestibulum porta, sapien eu mollis commodo, sapien dui maximus justo, vitae varius neque erat non nisi. Aliquam ultricies interdum maximus. In hac habitasse platea dictumst. Quisque ligula lectus, elementum in eros ut, malesuada eleifend ligula. Suspendisse condimentum sit amet velit nec placerat. Cras nec odio ligula. Phasellus vitae ultrices arcu. Phasellus sem erat, facilisis et varius quis, ullamcorper vel purus. Cras a felis varius, scelerisque nunc consectetur, placerat dolor. Duis nisl sem, aliquam eu sem ut, volutpat feugiat turpis.",
-    "Curabitur pulvinar, nisl varius pulvinar scelerisque, dolor ante pulvinar mauris, at rutrum urna velit vel ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce finibus metus quis erat lobortis, ac porta diam convallis. In feugiat sagittis neque, in feugiat leo cursus et. Suspendisse a lorem ac mi placerat ornare eu vitae libero. Donec pellentesque finibus aliquet. Pellentesque quis justo iaculis, convallis neque sed, scelerisque justo. Donec efficitur neque ac lectus rutrum, quis varius sapien suscipit. Fusce hendrerit nibh ac urna commodo, id faucibus libero viverra. Praesent eu elit turpis. Proin vestibulum dolor id nibh vehicula viverra. Fusce vitae bibendum erat, at aliquam dolor."
+    "Asbo was a personal project that started in the best possible circumstances: in response to a real problem that I was experiencing at the time. I have been a fan of electronic and underground club music for years, following the scenes as they mutated and spawned new genres, and I was always dialed in to what was happening in the UK. At the time, I was listening to a lot of dj mix shows, and paying close attention to several pirate/internet radio stations based in London. I noticed that a lot of the same djs that I followed would pop up on several different stations. At the same time, some of the stations would be pushing out a large nunber of shows, but I was only interested in a subset that I kept returning to week after week. One of the stations had a rss feed but most did not, and relied on soundcloud or mixcloud to host the audio.",
+    "I decided to build an aggregator that would abstract the different stations into a normalized 'platform' model, and make djs or 'artists' first-class citizens. I opted for Ruby on Rails for the server layer, and React & Redux for the client. I used an html scraping library (nokogiri) to coerce the output of the different station sites into a single feed, which I exposed via REST API on the server-side.",
+    "Ultimately, the project's life was short-lived. Of the three stations I was building the app around, one is now defunct, one changed to a dramatically different (and improved) ux, which invalidated my parser, and one is still standing. These days I still listen to rinse.fm almost every day, but I have to make do without a bespoke feed experience :-)."
   ],
+
   tags:[
     "Ruby",
     "Rails",

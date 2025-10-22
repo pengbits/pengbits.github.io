@@ -12,7 +12,7 @@ const data:ProjectDetails = {
   ],
   body:[
     "I was looking for a good sandbox project to flex my full-stack muscles on, and I came across the Tribeca Pediatrics patient portal. I wanted to reimagine the user experience as something more whimiscal, less fussy, but with all of the core functionality intact. I was attracted to the challenge of modeling the patient data and capturing the relationships, and utilizing Chart.js to render the growth charts accurately. I sourced the data from my own kids' records, scraping the output of Tribeca's growth chart services, and using it to populate the database. I also pulled some content on a few of the healthcare providers in order to flesh out their profile pages. ",
-    "I used the Shadcn ui framework, which provided some of the components, lending a bit of polish to the buttons, dropdowns and form inputs. The rest of the design was a mashup of pediatric-themed sketches from dribbble."
+    "I sourced some of the components from the Shadcn ui framework, which gave them a bit of extra polish. The rest of the design was a mashup of pediatric-themed sketches from dribbble."
   ],
   images: [{
     base: "/fbpeds/fbpeds-01-login_390x780.jpg",

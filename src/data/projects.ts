@@ -84,9 +84,10 @@ export const projects_map:ProjectIndex = {
     slug:"asbo",
     image: "/asbo/asbo_00_512x384.png",
     description:"An aggregator of a few internet radio stations that I was a fan of, but which lacked RSS feeds for their mix shows. It has a React/Redux frontend, Ruby on Rails backend, and uses Nokigiri for scraping and parsing html content to populate the models.",
-    primaryLink: 'git',
+    primaryLink: 'local',
     links:{
       git: "https://github.com/pengbits/asbo",
+      local: "/projects/7/asbo"
     }
   }
 }

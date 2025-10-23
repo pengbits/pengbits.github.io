@@ -1,5 +1,6 @@
 import { Box, Flex, Container, Text } from "@chakra-ui/react"
 import sections_data from "@/data/sections"
+import about_data from "@/data/about"
 import { SectionsMenu } from "./SectionsMenu"
 import { SectionsHorizontal } from "./SectionsHorizontal"
 import Link from "next/link"
@@ -14,8 +15,8 @@ export const Nav = () => (
     <Container as="nav" maxW="3xl">
       <Flex justifyContent="space-between" alignItems='center' py="4">
         <Text flexBasis="1/2" as="h1" py="2">
-          <Link href="/">&copy; Peng Bits</Link>
-        </Text>
+          <Link href="/">&copy; {about_data.nickname}</Link>
+        </Text> 
         <SectionsHorizontal 
           display={{base:'none', md:'flex'}} 
           sections={sections_data}>

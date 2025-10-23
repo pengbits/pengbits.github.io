@@ -6,9 +6,9 @@ const meta:Project = projects_map["6"]
 const data:ProjectDetails = {
   ...meta,
     highlights: [
-    `A clone of the NYC parking app, reimagined as a React SPA backed by REST APIS.`, 
+    `A clone of the NYC parking app, built with a React client and Node.js/Express backend.`, 
     `Designed a new database schema and seeded it with publicly-available meter data to support the geo-spatial layer.`,
-    `Implemented k-means clustering algorithm to group meters visually and wrap them in a Google Maps component.`
+    `Implemented k-means clustering & utilized data visualization to present the meter data.`
   ],
   body:[
     `Another fun personal project - I found myself looking at the NYC parking meter app constantly and wondering what it would take to build a working version. I realized that the data representing all the parking meters in New York City, including their geographic locations (lat/long coords) was publicly available as part of the OpenData project. Once I got my hands on that, it was just a matter of setting up the database and seeding it with meter data. From there I was able to build REST endpoints in a Node.js environment, utilizing TypeScript for end-to-end type-safety, and start sketching the Google Maps implementation in the client. The map view was the heaviest lift, but I also had to add models and handling around creating and extending (parking) sessions and managing the user's cars.`, 

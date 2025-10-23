@@ -92,5 +92,9 @@ export default async function Project({
         </ButtonLink>))}
       </Section>
     }
+    <Section heading="xs"
+      marginTop={20}
+      title="&copy; Peng Bits 2025. All wrongs reversed.">
+    </Section>
   </Container>)
 }

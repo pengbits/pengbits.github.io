@@ -9,7 +9,7 @@ const data:ProjectDetails = {
     md:   "/asbo/asbo_00_1024x768.png"
   }],
   highlights: [
-    `An aggregator providing a curated feed of dj mix show content across different stations.`,
+    `An aggregator for a collection of internet radio stations, supporting a curated feed of different djs and mix show content in a consolidated user experience.`,
     `React & Redux for the Client, Ruby on Rails for the server.`,
     `Heavily influenced by principles of Test-Driven and Behavior-Driven development, using Jest and Cucumber.`,
     `Renegade HTML scraping powered by Nokogiri!`

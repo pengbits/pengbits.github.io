@@ -9,6 +9,6 @@ export const ThemeSwitcherMenuItem = () => {
   return (<Menu.Item
     value="theme"
     onClick={toggleColorMode}>
-    {colorMode}{' '}{colorMode == "light" ? <LuSun /> : <LuMoon />}
+    {colorMode == "light" ? <LuSun /> : <LuMoon />}
   </Menu.Item>
 )}

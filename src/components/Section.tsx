@@ -37,7 +37,7 @@ export const Section = ({marginTop,padding,title,subTitle,heading,description,ch
       px={padding?.x !== undefined ? padding.x : default_padding.x}
       py={padding?.y !== undefined ? padding.y : default_padding.y}
     >
-      <Heading size={heading}>{title} {subTitle && <SectionSubtitle>{subTitle}</SectionSubtitle>}</Heading>
+      <Heading className="mb-2" size={heading}>{title} {subTitle && <SectionSubtitle>{subTitle}</SectionSubtitle>}</Heading>
       {description && <p>{description}</p>}
       {children}
     </Box>

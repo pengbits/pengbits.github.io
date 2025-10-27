@@ -1,5 +1,6 @@
 import { Text } from "@chakra-ui/react"
 import { applyFormatting } from "@/lib/markup"
+import styles from "./BodyText.module.css"
 type BodyTextProps = {
   body: string[],
   useMarkup: boolean
@@ -7,6 +8,7 @@ type BodyTextProps = {
 export const BodyText = ({body, useMarkup}:BodyTextProps) => {
   return body.map((p,i) => {
     return <Text 
+    className="body-text"
       key={i} 
       fontSize="medium" 
       as="p"

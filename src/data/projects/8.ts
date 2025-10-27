@@ -5,8 +5,8 @@ const meta:Project = projects_map["8"]
 const data:ProjectDetails = {
   ...meta,
   images: [{
-    base: "/the-dudes-ep/00_generic-front-592x600.jpg",
-    md:   "/the-dudes-ep/00_generic-front-592x600.jpg"
+    base: "/the-dudes-ep/00-generic-front_592x600.jpg",
+    md:   "/the-dudes-ep/00-generic-front_592x600.jpg"
   }],
   highlights: [
     "Art direction, design, and production for a pivotal release on Shadetek Records.",
@@ -14,7 +14,7 @@ const data:ProjectDetails = {
     "Created an original font, utilized screenprinting and mixed media, and unique analog techniques to introduce glitches and variations in the end product."
   ],
   body:[
-    `[https://www.discogs.com/artist/63564-Team-Shadetek](Team Shadetek) are a pair of electronic/techno and hiphop music producers  that had an independent label in the early-mid 2000s, releasing their own productions as well as some truly innovative tunes by other beatmakers, originally as part of the IDM scene, but later expanding into Grime and Dancehall and working with vocalists. I was in an artists' collective with them, along with the street artist [https://swoonstudio.org/about](Swoon), they wanted me to design a sleeve for a vinyl-only release.`,
+    `[https://www.discogs.com/artist/63564-Team-Shadetek](Team Shadetek) are a pair of electronic/techno and hiphop music producers  that had an independent label in the early-mid 2000s, releasing their own productions as well as some truly innovative tunes by other beatmakers, originally as part of the IDM scene, but later expanding into Grime and Dancehall and working with vocalists. I was part of an artists' collective with them, along with the street artist [https://swoonstudio.org/about](Swoon). They wanted me to design a sleeve for a vinyl-only release.`,
     
     `At the time, Team Shadetek were interested in pushing the boundaries of vinyl packaging design by making limited numbers of uniquely distressed sleeves that would be treated as collectibles. They had worked with Swoon on an earlier release and she had utilized collage and stickers, pairing them with the brown craft-paper style vinyl sleeves that were an economical option. I wanted to do something similar but put my own spin on it.`,
 

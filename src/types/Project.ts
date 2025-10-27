@@ -2,6 +2,7 @@ export type LinkType =
   | 'git'
   | 'local'
   | 'live'
+  | 'flickr'
 
 export type ProjectLinkCollection = {
   [key in LinkType]?:string
@@ -10,7 +11,8 @@ export type ProjectLinkCollection = {
 export const LinkLabels = {
   git: 'git',
   local: 'case study',//'learn more'
-  live: 'live site'
+  live: 'live site',
+  'flickr': 'photos'
 }
 
 export type VideoSourceSet = {

@@ -6,7 +6,7 @@ import project_4 from './4'
 import project_5 from './5'
 import project_6 from './6'
 import project_7 from './7'
-
+import project_8 from './8'
 
 interface ProjectIndex  {
   [key: string] : ProjectDetails
@@ -19,7 +19,8 @@ const index:ProjectIndex = {
   "4": project_4,
   "5": project_5,
   "6": project_6,
-  "7": project_7
+  "7": project_7,
+  "8": project_8
 }
 
 export default index

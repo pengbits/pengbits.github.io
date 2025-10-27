@@ -1,0 +1,6 @@
+.body-text .link {
+  text-decoration: underline;
+}
+.body-text .link:hover {
+  text-decoration: none;
+}

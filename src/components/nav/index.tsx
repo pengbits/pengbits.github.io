@@ -13,7 +13,7 @@ export const Nav = () => (
     borderColor={{base:"black", _dark:"white"}}
   >
     <Container as="nav" maxWidth="100%" px="0">
-      <Box px={{base:"1rem", md:"15vw"}}>
+      <Box px={{base:"1rem", md:"10vw", lg:"15vw"}}>
       <Flex justifyContent="space-between" alignItems='center' py="4">
         <Text flexBasis="1/2" as="h1" py="2">
           <Link href="/">&copy; {about_data.nickname}</Link>

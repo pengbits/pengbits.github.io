@@ -33,6 +33,7 @@ export default async function Project({
     <Section
       heading="5xl" 
       title={data.title}
+      padding={{y:"20vh"}}
     ></Section>
     
     {data.images?.length && <Section
@@ -64,7 +65,7 @@ export default async function Project({
       heading="3xl"
       title="Tags"
       >
-        <HStack>
+        <HStack wrap="wrap">
           {data.tags?.map((t,i) => (<Tag.Root  key={i}>
             <Tag.Label>{t}</Tag.Label>
           </Tag.Root>)

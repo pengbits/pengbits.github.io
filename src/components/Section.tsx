@@ -5,8 +5,8 @@ import { ConditionalValue } from "@chakra-ui/react"
 type SectionProps = {
   marginTop?:number
   padding?:{
-    y?:number,
-    x?:number
+    y?:number | string,
+    x?:number | string
   },
   title:string,
   subTitle?:string,

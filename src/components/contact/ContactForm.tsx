@@ -4,6 +4,7 @@ import { FormEvent, FC, useState } from 'react';
 import { Box, Text, Field, Input, Textarea, Button} from '@chakra-ui/react'
 import type { SendMailAttrs } from '@/types/SendMail';
 import { sendMail } from '@/lib/api';
+import { BsBorderWidth } from 'react-icons/bs';
 
 export const ContactForm:FC = () => {
   const [loading, setLoading] = useState<boolean | null>(false)
@@ -43,10 +44,10 @@ export const ContactForm:FC = () => {
 
 
   return (
-  <Box asChild py="4">
+  <Box asChild>
     <form onSubmit={handleSubmit}>
       {loading  && <Text as="p" mb="4">loading...</Text>}
-      {error    && <Text as="p" mb="4">{error}</Text>}
+      {error    && <Text as="p" mb="4" fontWeight="bold" borderWidth="2px" borderColor="red.500" p="2.5" color="red.500">{error}</Text>}
       {success  && <Text as="p" mb="4" fontWeight="bold" borderWidth="2px" borderColor="green.600" p="2.5" color="green.600">Your Message has been sent.</Text>}
       <Field.Root as="p" mb="4">
         <Field.Label htmlFor="name">Name</Field.Label>
@@ -60,7 +61,7 @@ export const ContactForm:FC = () => {
         <Field.Label htmlFor="message">Message</Field.Label>
         <Textarea required name="message" placeholder="Enter a message"></Textarea>
       </Field.Root>
-      <Button as="input" type="submit" value="Send"></Button>
+      <Button as="input" type="submit" width="100%" value="Send"></Button>
     </form>
   </Box>
   )

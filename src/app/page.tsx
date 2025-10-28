@@ -1,5 +1,5 @@
 // vendor
-import { Container, List, Text } from "@chakra-ui/react"
+import { Container, List, Text,Box, Flex } from "@chakra-ui/react"
 // components
 import { Section } from "@/components/Section"
 import { ProjectGrid } from "@/components/projects/ProjectGrid"
@@ -12,6 +12,7 @@ import project_data from "@/data/projects"
 import work_history_data from "@/data/work"
 import about_data from "@/data/about"
 import skills_data from "@/data/skills"
+import contact_data from "@/data/contact"
 
 export default function Home() {
   return (
@@ -105,13 +106,20 @@ export default function Home() {
       =:contact 
       */}
       <SectionAnchor
-        title="Get In Touch">
+        title="Contact">
       </SectionAnchor>
       <Section
         heading="5xl" 
-        title="Get In Touch"> 
-          <Text>I&apos;m always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out.</Text>
-          <ContactForm />
+        title="Contact"> 
+          <Text mb={{base:"4", md:"8"}}>{contact_data.headline}</Text>
+          <Flex alignItems="initial" flexDir={{base:'column', md:'row'}}>
+            <Box flexBasis="1/2" pr="2" mb={{base:"8", md:"0"}}>
+              <ContactLinks />
+            </Box>
+            <Box flexBasis="1/2">
+              <ContactForm />
+            </Box>
+          </Flex>
       </Section>
       <Section heading="xs"
         marginTop={20}

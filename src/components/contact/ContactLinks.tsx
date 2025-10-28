@@ -10,9 +10,17 @@ export const ContactLinks = () => (<ul className={styles['contact-links']}>
         key={p.platform} 
         aria-label={p.platform}>
           <a href={`${p.baseUrl}${p.handle}`}>
-            <VisuallyHidden>{p.handle}</VisuallyHidden>
+            <i>
+              <VisuallyHidden>{p.handle}</VisuallyHidden>
+            </i>
+            <span className={styles['label']}>
+              <strong>
+                {p.platform}</strong>{': '}
+                {p.handle}
+              </span> 
           </a>
       </li>
+      
     )
   })}
 </ul>)

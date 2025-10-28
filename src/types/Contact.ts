@@ -5,5 +5,6 @@ type ContactPlatform = {
 }
 
 export type Contact = {
+  headline: string,
   platforms: ContactPlatform[]
 }

@@ -17,7 +17,7 @@
   height: 2rem;
   width: 2rem;
   display: block;
-  background: transparent no-repeat url(/images/svg/github.svg) center center;
+  background: transparent no-repeat url(/images/svg/contact/white/github.svg) center center;
   background-size: 2rem;
 }
 
@@ -28,14 +28,26 @@
 
 }
 .contact-links li.email i {
-  background-image: url(/images/svg/email.svg) ;
+  background-image: url(/images/svg/contact/white/email.svg) ;
 }
 
 .contact-links li.linkedin i {
-  background-image: url(/images/svg/linkedin.svg) ;
+  background-image: url(/images/svg/contact/white/linkedin.svg) ;
 }
 
 .contact-links a:hover .label,
 .contact-links a:active .label{
   text-decoration: underline;
+}
+
+.dark .contact-links li.email {
+  background-image: url(/images/svg/contact/black/email.svg) ;
+}
+
+.dark .contact-links li.linkedin {
+  background-image: url(/images/svg/contact/black/linkedin.svg) ;
+}
+
+.dark .contact-links li.github {
+  background-image: url(/images/svg/contact/black/github.svg) ;
 }

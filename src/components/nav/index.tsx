@@ -12,7 +12,8 @@ export const Nav = () => (
     borderBottom='black solid 2px'
     borderColor={{base:"black", _dark:"white"}}
   >
-    <Container as="nav" maxW="3xl">
+    <Container as="nav" maxWidth="100%" px="0">
+      <Box px={{base:"1rem", md:"15vw"}}>
       <Flex justifyContent="space-between" alignItems='center' py="4">
         <Text flexBasis="1/2" as="h1" py="2">
           <Link href="/">&copy; {about_data.nickname}</Link>
@@ -26,6 +27,7 @@ export const Nav = () => (
           sections={sections_data}>
         </SectionsMenu>
       </Flex>
+      </Box>
     </Container>
   </Box>
 )

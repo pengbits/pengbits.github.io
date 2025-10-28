@@ -13,7 +13,11 @@ export const Footer = () => {
   </SectionAnchor>
   <Section
     heading="5xl" 
-    title="Contact"> 
+    title="Contact"
+      padding={{
+        x:0
+      }}
+    > 
       <Text mb={{base:"4", md:"8"}}>{contact_data.headline}</Text>
       <Flex alignItems="initial" flexDir={{base:'column', md:'row'}}>
         <Box flexBasis="1/2" pr="2" mb={{base:"8", md:"0"}}>

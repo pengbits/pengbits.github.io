@@ -1,8 +1,9 @@
 
 import type { Metadata } from "next";
 import { Provider } from "@/components/ui/provider";
-import { Box } from "@chakra-ui/react"
+import { Box, Container } from "@chakra-ui/react"
 import Nav from "@/components/nav";
+import { Footer } from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -23,7 +24,9 @@ export default function RootLayout({
           <Box as="main" mt="20"
             // border='purple solid 2px'
             >
+              <Container maxWidth="3xl">
             {children}
+            <Footer /></Container>
           </Box>
         </Provider>
       </body>

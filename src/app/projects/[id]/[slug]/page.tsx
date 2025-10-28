@@ -29,7 +29,7 @@ export default async function Project({
   const data:ProjectDetails = getProject({id})
   const related_data = data.relatedProjects?.length ? getRelatedProjects({id}) : []
 
-  return (<Container maxWidth="3xl">
+  return (<>
     <Section
       heading="5xl" 
       title={data.title}
@@ -92,9 +92,5 @@ export default async function Project({
         </ButtonLink>))}
       </Section>
     }
-    <Section heading="xs"
-      marginTop={20}
-      title="&copy; Peng Bits 2025. All wrongs reversed.">
-    </Section>
-  </Container>)
+</>)
 }

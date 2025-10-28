@@ -15,10 +15,7 @@ import skills_data from "@/data/skills"
 import contact_data from "@/data/contact"
 
 export default function Home() {
-  return (
-    <Container maxWidth="3xl" 
-      // border={'purple solid 1px'}
-      >
+  return (<>
       <Section
         heading="6xl" 
         title={about_data.name}
@@ -101,30 +98,6 @@ export default function Home() {
           </Section>)
         })}
       </Section>
-      {/*
-      
-      =:contact 
-      */}
-      <SectionAnchor
-        title="Contact">
-      </SectionAnchor>
-      <Section
-        heading="5xl" 
-        title="Contact"> 
-          <Text mb={{base:"4", md:"8"}}>{contact_data.headline}</Text>
-          <Flex alignItems="initial" flexDir={{base:'column', md:'row'}}>
-            <Box flexBasis="1/2" pr="2" mb={{base:"8", md:"0"}}>
-              <ContactLinks />
-            </Box>
-            <Box flexBasis="1/2">
-              <ContactForm />
-            </Box>
-          </Flex>
-      </Section>
-      <Section heading="xs"
-        marginTop={20}
-        title="&copy; Peng Bits 2025. All wrongs reversed.">
-      </Section>
-    </Container>
+  </>
   )
 }

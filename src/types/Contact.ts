@@ -7,4 +7,3 @@ type ContactPlatform = {
 export type Contact = {
   platforms: ContactPlatform[]
 }
-

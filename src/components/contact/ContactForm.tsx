@@ -34,6 +34,7 @@ export const ContactForm:FC = () => {
         setError(res.error)
       }
     } catch (e:any) {
+      console.log(e)
       setError(e.message)
     } finally {
       setLoading(false)
@@ -44,17 +45,18 @@ export const ContactForm:FC = () => {
   return (
   <form onSubmit={handleSubmit}>
     {loading && <p>loading...</p>}
-    <Field.Root as="p">
+    {error && <p>{error}</p>}
+    <Field.Root as="p" my="4">
       <Field.Label htmlFor="name">Name</Field.Label>
-      <Input size="md" name="name" type="text" placeholder="Enter your name"></Input>
+      <Input required size="md" name="name" type="text" placeholder="Enter your name"></Input>
     </Field.Root>
-    <Field.Root as="p">
+    <Field.Root as="p" mb="4">
       <Field.Label htmlFor="name">Email</Field.Label>
-      <Input size="md"  name="email" type="email" placeholder="Enter your email"></Input>
+      <Input required size="md"  name="email" type="email" placeholder="Enter your email"></Input>
     </Field.Root>
-    <Field.Root as="div">
+    <Field.Root as="div" mb="4">
       <Field.Label htmlFor="message">Message</Field.Label>
-      <Textarea name="message" placeholder="Enter a message"></Textarea>
+      <Textarea required name="message" placeholder="Enter a message"></Textarea>
     </Field.Root>
     <Button as="input" type="submit" value="Send"></Button>
   </form>)

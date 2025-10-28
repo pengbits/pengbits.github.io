@@ -1,11 +1,12 @@
 // vendor
-import { Container, List } from "@chakra-ui/react"
+import { Container, List, Text } from "@chakra-ui/react"
 // components
 import { Section } from "@/components/Section"
 import { ProjectGrid } from "@/components/projects/ProjectGrid"
 import { SkillsList } from "@/components/skills/SkillsList"
 import { SectionAnchor } from "@/components/SectionAnchor"
 import { ContactLinks } from "@/components/contact/ContactLinks"
+import { ContactForm } from "@/components/contact/ContactForm"
 // data
 import project_data from "@/data/projects"
 import work_history_data from "@/data/work"
@@ -109,8 +110,8 @@ export default function Home() {
       <Section
         heading="5xl" 
         title="Get In Touch"> 
-          <p>I&apos;m always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out.</p>
-          <ContactLinks />
+          <Text>I&apos;m always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out.</Text>
+          <ContactForm />
       </Section>
       <Section heading="xs"
         marginTop={20}

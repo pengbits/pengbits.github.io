@@ -10,7 +10,7 @@ const data:ProjectDetails = {
     `Set up monorepo architecture, dependency management for the design system, and static site generation for the documentation hub.`
   ],
   body:[
-  `The sho.com Styleguide was the internal site for cataloging the component library and Design System that powered the marketing site. It served as a 'living' documentation hub for showcasing components, patterns and primitives, providing context and examples of how to use the system, similar how Storybook is commonly used today.`,
+  `The sho.com Styleguide was the internal site for cataloging the component library and Design System that powered the marketing site. It served as a 'living' documentation hub for showcasing components, patterns and primitives, providing context and examples of how to use the system, similar to how Storybook is commonly used today.`,
   
   `The Design Tokens are defined as SASS variables, with everything from colors and typography to dimensional units defined in their own distinct layers. JavaScript is applied at the component level, meaning that developers can scale up complexity as needed, applying simple behaviors with vanilla JS/ES6+, or by writing more complex components in React. Each component or primitive has its own directory containing the css, html and optional js source files, as well as a markdown file which houses the documentation and article-style content. This provided a lot of flexibility for creating the styleguide, by wrapping the markdown files in their own presentation layer and coercing them into a static site with Metalsmith.`,
   

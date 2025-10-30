@@ -1,6 +1,6 @@
 import type { SendMailAttrs } from "@/types/SendMail"
 const API_URL = `https://formspree.io/f/xgvplwne`
-const SIMULATE_LATENCY = true
+const SIMULATE_LATENCY = false
 const LATENCY_DELAY = 2000
 
 export const sendMail = async (attrs:SendMailAttrs) => {

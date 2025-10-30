@@ -4,6 +4,7 @@ import about_data from "@/data/about"
 import { SectionsMenu } from "./SectionsMenu"
 import { SectionsHorizontal } from "./SectionsHorizontal"
 import Link from "next/link"
+import { InnerContainer } from "../InnerContainer"
 
 export const Nav = () => (
   <Box as="header" zIndex='200' position="fixed" h='18' top='0' w="100%" 
@@ -13,7 +14,7 @@ export const Nav = () => (
     borderColor={{base:"black", _dark:"white"}}
   >
     <Container as="nav" maxWidth="100%" px="0">
-      <Box px={{base:"1rem", md:"10vw", lg:"15vw"}}>
+      <InnerContainer>
       <Flex justifyContent="space-between" alignItems='center' py="4">
         <Text flexBasis="1/2" as="h1" py="2">
           <Link href="/">&copy; {about_data.nickname}</Link>
@@ -27,7 +28,7 @@ export const Nav = () => (
           sections={sections_data}>
         </SectionsMenu>
       </Flex>
-      </Box>
+      </InnerContainer>
     </Container>
   </Box>
 )

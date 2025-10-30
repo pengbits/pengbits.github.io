@@ -34,20 +34,26 @@
 .contact-links li.linkedin i {
   background-image: url(/images/svg/contact/white/linkedin.svg) ;
 }
-
+.contact-links li.discogs i {
+ background-image: url(/images/svg/contact/white/discogs.svg) ; 
+}
 .contact-links a:hover .label,
 .contact-links a:active .label{
   text-decoration: underline;
 }
 
-.dark .contact-links li.email {
+.dark .contact-links li.email i {
   background-image: url(/images/svg/contact/black/email.svg) ;
 }
 
-.dark .contact-links li.linkedin {
+.dark .contact-links li.linkedin i {
   background-image: url(/images/svg/contact/black/linkedin.svg) ;
 }
 
-.dark .contact-links li.github {
+.dark .contact-links li.github i {
   background-image: url(/images/svg/contact/black/github.svg) ;
+}
+
+.dark .contact-links li.discogs i {
+ background-image: url(/images/svg/contact/black/discogs.svg) ; 
 }

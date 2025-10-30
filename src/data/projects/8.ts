@@ -7,6 +7,9 @@ const data:ProjectDetails = {
   images: [{
     base: "/the-dudes-ep/00-generic-front_592x600.jpg",
     md:   "/the-dudes-ep/00-generic-front_592x600.jpg"
+  },{
+    base: "/the-dudes-ep/01-generic-back_592x600.jpg",
+    md:   "/the-dudes-ep/01-generic-back_592x600.jpg"
   }],
   highlights: [
     "Art direction, design, and production for a pivotal release on Shadetek Records.",

@@ -2,6 +2,10 @@ import { VisuallyHidden } from "@chakra-ui/react"
 import styles from "./ContactLinks.module.css"
 import contact_data from "@/data/contact"
 
+const pretty = (handle:string) => (
+  handle.replace('-',' ').toLowerCase()
+)
+
 export const ContactLinks = () => (<ul className={styles['contact-links']}>
   {contact_data.platforms.map(p => {
     return (
@@ -16,7 +20,7 @@ export const ContactLinks = () => (<ul className={styles['contact-links']}>
             <span className={styles['label']}>
               <strong>
                 {p.platform}</strong>{': '}
-                {p.handle}
+                {pretty(p.handle)}
               </span> 
           </a>
       </li>

@@ -4,6 +4,7 @@ import { Provider } from "@/components/ui/provider";
 import { Box, Container } from "@chakra-ui/react"
 import Nav from "@/components/nav";
 import { Footer } from "@/components/Footer";
+import { InnerContainer } from "@/components/InnerContainer";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -25,14 +26,14 @@ export default function RootLayout({
             // border='purple solid 2px'
             >
             <Container maxWidth="100%" px="0" pb="40">
-              <Box px={{base:"1rem",  md:"10vw", lg:"15vw"}}>
+              <InnerContainer>
                 {children}
-              </Box>
+              </InnerContainer>
             </Container>
             <Container maxWidth="100%" px="0" color="gray.100" bgColor="gray.950">
-              <Box px={{base:"1rem", md:"10vw", lg:"15vw"}}>
+              <InnerContainer>
                 <Footer />
-              </Box>
+              </InnerContainer>
             </Container>
           </Box>
         </Provider>

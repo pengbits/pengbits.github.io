@@ -14,6 +14,10 @@ const contact:Contact = {
     platform:'github',
     handle: 'pengbits',
     baseUrl: 'https://github.com/'
+  },{
+    platform:'discogs',
+    handle: 'Mode-Raw',
+    baseUrl: 'https://www.discogs.com/artist/1893364-'
   }]
 }
 

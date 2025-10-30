@@ -7,7 +7,7 @@ import { sendMail } from '@/lib/api';
 
 export const ContactForm:FC = () => {
   const [loading, setLoading] = useState<boolean | null>(false)
-  const [error,   setError]   = useState<boolean | null>(null)
+  const [error,   setError]   = useState<string | null>(null)
   const [success, setSuccess] = useState<boolean | null>(null)
 
   const handleSubmit = (e:FormEvent<HTMLFormElement>) => {
@@ -30,9 +30,9 @@ export const ContactForm:FC = () => {
         setSuccess(false)
         setError(res.error)
       }
-    } catch (e:any) {
+    } catch (e: unknown) {
       console.log(e)
-      setError(e.message)
+      setError(e instanceof Error ? e.message : 'An unexpected error occurred')
     } finally {
       setLoading(false)
     }

@@ -1,18 +1,16 @@
 // vendor
-import { Container, List, Text,Box, Flex } from "@chakra-ui/react"
+import { List } from "@chakra-ui/react"
 // components
 import { Section } from "@/components/Section"
 import { ProjectGrid } from "@/components/projects/ProjectGrid"
 import { SkillsList } from "@/components/skills/SkillsList"
 import { SectionAnchor } from "@/components/SectionAnchor"
-import { ContactLinks } from "@/components/contact/ContactLinks"
-import { ContactForm } from "@/components/contact/ContactForm"
+
 // data
 import project_data from "@/data/projects"
 import work_history_data from "@/data/work"
 import about_data from "@/data/about"
 import skills_data from "@/data/skills"
-import contact_data from "@/data/contact"
 
 export default function Home() {
   return (<>

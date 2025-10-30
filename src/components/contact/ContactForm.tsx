@@ -1,7 +1,7 @@
 "use client"
 
 import { FormEvent, FC, useState } from 'react';
-import { Box, Text, Field, Input, Textarea, Button} from '@chakra-ui/react'
+import { Box, Text, Field, Input, Textarea, Button, Flex, Spinner} from '@chakra-ui/react'
 import type { SendMailAttrs } from '@/types/SendMail';
 import { sendMail } from '@/lib/api';
 
@@ -39,10 +39,15 @@ export const ContactForm:FC = () => {
   }
 
 
-  return (
+  return loading ? (<Flex flexDir="column" justifyContent="center" height="100%">
+    <Box textAlign="center" animation="pulse 2s infinite">
+      <Spinner size="xl" />
+      <Text fontSize="sm">Sending Message...</Text>
+    </Box>
+  </Flex>
+  ) : (
   <Box asChild>
     <form onSubmit={handleSubmit}>
-      {loading  && <Text as="p" mb="4">loading...</Text>}
       {error    && <Text as="p" mb="4" fontWeight="bold" borderWidth="2px" borderColor="red.500" p="2.5" color="red.500">{error}</Text>}
       {success  && <Text as="p" mb="4" fontWeight="bold" borderWidth="2px" borderColor="green.600" p="2.5" color="green.600">Your Message has been sent.</Text>}
       <Field.Root as="p" mb="4">

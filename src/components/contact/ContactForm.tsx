@@ -4,7 +4,6 @@ import { FormEvent, FC, useState } from 'react';
 import { Box, Text, Field, Input, Textarea, Button} from '@chakra-ui/react'
 import type { SendMailAttrs } from '@/types/SendMail';
 import { sendMail } from '@/lib/api';
-import { BsBorderWidth } from 'react-icons/bs';
 
 export const ContactForm:FC = () => {
   const [loading, setLoading] = useState<boolean | null>(false)
@@ -15,10 +14,7 @@ export const ContactForm:FC = () => {
     e.preventDefault()
     const form      = e.currentTarget
     const formData  = new FormData(form)
-    const data      = Object.fromEntries(formData.entries()) as Record<
-      keyof SendMailAttrs,
-      FormDataEntryValue
-    > as SendMailAttrs
+    const data      = Object.fromEntries(formData.entries()) as unknown as SendMailAttrs
     submit(data)
   }
 

@@ -89,6 +89,18 @@ export const projects_map:ProjectIndex = {
       git: "https://github.com/pengbits/asbo",
       local: "/projects/7/asbo"
     }
+  },
+  "8" : {
+    id: "8",
+    title: "The Dudes EP",
+    slug: "the-dudes-ep",
+    image: "/the-dudes-ep/00-generic-front_512x384.jpg",
+    description: "Limited-edition packaging design for a vinyl-only release in which each sleeve was uniquely distressed, altered and customized, resulting in 150 one-of-a-kind collectable products.",
+    primaryLink: 'local',
+    links: {
+      flickr: "https://www.flickr.com/photos/thedudesep/",
+      local: "/projects/8/the-dudes-ep",
+    }
   }
 }
 export const projects_list = Object.values(projects_map)

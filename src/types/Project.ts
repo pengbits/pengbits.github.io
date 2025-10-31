@@ -34,7 +34,12 @@ export type Project = {
   status?: "in-progress | archived | live"
 }
 
-export type ImageSrcSet = {
+export type StaticImageSrc= {
+  src: string,
+  aspectRatio: "square" | "portrait" | "landscape"
+}
+
+export type ResponsiveImageSrc= {
   base: string,
   md: string
 }
@@ -47,7 +52,7 @@ export type ProjectDetails = {
   body: string[],
   highlights?: string[],
   links?: ProjectLinkCollection,
-  images?: ImageSrcSet[],
+  images?: Array<StaticImageSrc | ResponsiveImageSrc>,
   video?: VideoSourceSet,
   tags?: string[],
   relatedProjects? : string[]

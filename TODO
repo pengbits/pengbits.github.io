@@ -1,2 +1,9 @@
-double check project images, especially fbpeds, they seem blurry in places.
-add option for different aspect ratio ie square front and back of dudes ep
+- double check project images, especially fbpeds, they seem blurry in places.
+- add a featured or archive property to project so we can hide packaging design untill user toggles 'see more'
+- add bk anthem heavy meckle projects
+- add 'sketches' category for takehomes and anything too small to be considered a project:
+- what about a way to break up images into before and after project summary ie below the fold images
+- slideshow or carousel for larger image collections ie dudes ep sleeves
+-- gusto takehome table component
+-- goog.io tree take home
+-- bask dashboard? if you were to finish it

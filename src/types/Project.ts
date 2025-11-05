@@ -3,6 +3,7 @@ export type LinkType =
   | 'local'
   | 'live'
   | 'flickr'
+  | 'discogs'
 
 export type ProjectLinkCollection = {
   [key in LinkType]?:string
@@ -12,7 +13,8 @@ export const LinkLabels = {
   git: 'git',
   local: 'case study',//'learn more'
   live: 'live site',
-  'flickr': 'photos'
+  flickr: 'photos',
+  discogs: 'discogs'
 }
 
 export type VideoSourceSet = {
@@ -26,6 +28,7 @@ export type Project = {
   slug?: string,
   description?: string,
   current?: boolean,
+  priority: number,
   draft?:boolean,
   image?:string,
   video?:VideoSourceSet,

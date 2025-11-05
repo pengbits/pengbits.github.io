@@ -14,6 +14,7 @@ const ProjectLinkCollectionComponent = ({links,omit}:ProjectLinkCollectionProps)
     {links.local && (!omit || omit !== 'local') && <ButtonLink href={links.local}>{LinkLabels.local}</ButtonLink>}
     {links.git  &&  (!omit || omit !== 'git')   && <ButtonLink href={links.git}>{LinkLabels.git}</ButtonLink>}
     {links.flickr &&  (!omit || omit !== 'flickr')   && <ButtonLink href={links.flickr}>{LinkLabels.flickr}</ButtonLink>}
+    {links.discogs &&  (!omit || omit !== 'discogs')   && <ButtonLink href={links.discogs}>{LinkLabels.discogs}</ButtonLink>}
   </HStack>
 
 }

@@ -7,7 +7,7 @@ import { SkillsList } from "@/components/skills/SkillsList"
 import { SectionAnchor } from "@/components/SectionAnchor"
 
 // data
-import project_data from "@/data/projects"
+import project_data, {projects_list_min_priority} from "@/data/projects"
 import work_history_data from "@/data/work"
 import about_data from "@/data/about"
 import skills_data from "@/data/skills"
@@ -36,7 +36,7 @@ export default function Home() {
             y:8
           }}
         >
-        <ProjectGrid projects={project_data} />
+        <ProjectGrid projects={projects_list_min_priority(200)} />
       </Section>
       {/*
       

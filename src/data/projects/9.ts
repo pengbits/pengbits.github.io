@@ -13,8 +13,9 @@ const data:ProjectDetails = {
   }],
   highlights: [
     "Performed art direction, packaging design, and photography for a crucial release on Sound-Ink Records.",
-    "Overcame logistical hurdles (MTA Strike!), managed competing client desires and sourced a location for the shoot to complete the project on time.",
-    "Tapped an intimate familiarity with the visual language of hiphop and dancehall releases to craft a new classic sleeve design."
+    "Arguably the first Grime track produced and vocaled in the US, I was there to capture the moment in visual form.",
+    "Overcame logistical hurdles ('05 MTA Strike!), managed competing client desires and sourced a last-minute location for the shoot in order to execute the sleeve art on brand and on time.",
+    "Leveraged an intimate familiarity with the visual language of hiphop and dancehall releases to craft a new classic sleeve design."
   ],
   body:[
     `tbd`

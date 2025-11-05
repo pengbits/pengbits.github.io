@@ -127,4 +127,5 @@ export const projects_map:ProjectIndex = {
 }
 export const projects_list = Object.values(projects_map)
 export const projects_list_published = projects_list.filter(p => !p.draft)
+export const projects_list_min_priority = ((priority:number) => projects_list_published.filter(p => p.priority >= priority))
 export default projects_list_published

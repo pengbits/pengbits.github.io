@@ -8,8 +8,8 @@ import { InnerContainer } from "@/components/InnerContainer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Dave Paul - Senior Frontend Engineer ",
-  description: "Senior Frontend Engineer | Crafting consistent, delightful, and impactful web experiences"
+  title: "Dave Paul - Senior Full-Stack Engineer ",
+  description: "Senior Full-Stack Engineer | Crafting consistent, delightful, and impactful web experiences | React/TypeScript/Node.js/Design Systems"
 }
 
 export default function RootLayout({

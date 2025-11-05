@@ -1,5 +1,3 @@
-- scroll to contact section broken
-- fix meta on layout, title element says 'senior frontend' but should be full-stack
 - double check project images, especially fbpeds, they seem blurry in places.
 - add a featured or archive property to project so we can hide packaging design untill user toggles 'see more'
 - add bk anthem heavy meckle projects

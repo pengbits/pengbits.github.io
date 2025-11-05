@@ -11,7 +11,7 @@ export const Sections:Section[] = [{
   titleShort: "Work",
   id: "work"
 },{
-  title:"Get In Touch",
+  title:"Contact",
   titleShort: "Contact",
   id: "contact"
 }]

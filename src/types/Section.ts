@@ -13,5 +13,6 @@ export type SectionNavigationProps = {
     'lg'?:string,
     'xl'?:string,
     '2xl'?:string
-  }
+  },
+  appendQuery?: string
 }

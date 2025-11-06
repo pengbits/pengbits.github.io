@@ -2,14 +2,11 @@
 import { List } from "@chakra-ui/react"
 // components
 import { Section } from "@/components/Section"
-import { ProjectGrid } from "@/components/projects/ProjectGrid"
-import { ProjectGridWithLoadMore } from "@/components/projects/ProjectGridWithLoadMore"
 import { ProjectsSection } from "@/components/projects/ProjectsSection"
 import { SkillsList } from "@/components/skills/SkillsList"
 import { SectionAnchor } from "@/components/SectionAnchor"
 
 // data
-import project_data from "@/data/projects"
 import work_history_data from "@/data/work"
 import about_data from "@/data/about"
 import skills_data from "@/data/skills"

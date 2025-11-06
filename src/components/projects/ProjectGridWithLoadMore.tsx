@@ -30,12 +30,10 @@ export const ProjectGridWithLoadMore = ({ initialProjects, belowPriority }: Prop
 
       // Dedup by id defensively
       const merged: Project[] = [...projects];
-      let appended = 0;
       for (const p of more) {
         if (!existingIds.has(p.id)) {
           merged.push(p);
           existingIds.add(p.id);
-          appended += 1;
         }
       }
 

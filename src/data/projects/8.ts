@@ -55,7 +55,9 @@ const data:ProjectDetails = {
 
     `I don't know how long the sleeves lasted before the thermal stickers faded beyond recognition, but at least I know the screenprinted and marker elements held up, wherever they are now!`
   ],
-
+  relatedProjects: [
+    '9'
+  ],
   tags:[
     "Records",
     "Packaging",

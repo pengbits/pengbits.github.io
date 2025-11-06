@@ -3,21 +3,18 @@ import { List } from "@chakra-ui/react"
 // components
 import { Section } from "@/components/Section"
 import { ProjectGrid } from "@/components/projects/ProjectGrid"
+import { ProjectGridWithLoadMore } from "@/components/projects/ProjectGridWithLoadMore"
+import { ProjectsSection } from "@/components/projects/ProjectsSection"
 import { SkillsList } from "@/components/skills/SkillsList"
 import { SectionAnchor } from "@/components/SectionAnchor"
 
 // data
-import project_data, {projects_list_min_priority} from "@/data/projects"
+import project_data from "@/data/projects"
 import work_history_data from "@/data/work"
 import about_data from "@/data/about"
 import skills_data from "@/data/skills"
 
-export default function Home({ searchParams }: { searchParams?: { [key: string]: string | string[] | undefined } }) {
-  const allProjectsParam = searchParams?.allProjects;
-  const allProjects = Array.isArray(allProjectsParam)
-    ? allProjectsParam.includes("true") || allProjectsParam.includes("1")
-    : allProjectsParam === "true" || allProjectsParam === "1";
-  const minPriority = allProjects ? 0 : 200;
+export default function Home() {
   return (<>
       <Section
         heading="6xl" 
@@ -41,7 +38,7 @@ export default function Home({ searchParams }: { searchParams?: { [key: string]:
             y:8
           }}
         >
-        <ProjectGrid projects={projects_list_min_priority(minPriority)} />
+        <ProjectsSection />
       </Section>
       {/*
       

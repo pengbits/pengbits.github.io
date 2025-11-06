@@ -12,7 +12,12 @@ import work_history_data from "@/data/work"
 import about_data from "@/data/about"
 import skills_data from "@/data/skills"
 
-export default function Home() {
+export default function Home({ searchParams }: { searchParams?: { [key: string]: string | string[] | undefined } }) {
+  const allProjectsParam = searchParams?.allProjects;
+  const allProjects = Array.isArray(allProjectsParam)
+    ? allProjectsParam.includes("true") || allProjectsParam.includes("1")
+    : allProjectsParam === "true" || allProjectsParam === "1";
+  const minPriority = allProjects ? 0 : 200;
   return (<>
       <Section
         heading="6xl" 
@@ -36,7 +41,7 @@ export default function Home() {
             y:8
           }}
         >
-        <ProjectGrid projects={projects_list_min_priority(200)} />
+        <ProjectGrid projects={projects_list_min_priority(minPriority)} />
       </Section>
       {/*
       

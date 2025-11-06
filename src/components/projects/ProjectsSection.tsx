@@ -22,7 +22,7 @@ export const ProjectsSection = () => {
   return (
     <ProjectGridWithLoadMore
       initialProjects={initial}
-      belowPriority={200}
+      belowPriority={minPriority}
     />
   );
 };

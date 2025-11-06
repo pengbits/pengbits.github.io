@@ -57,6 +57,7 @@ export type ProjectDetails = {
   links?: ProjectLinkCollection,
   images?: Array<StaticImageSrc | ResponsiveImageSrc>,
   video?: VideoSourceSet,
+  youtube?: string,
   tags?: string[],
   relatedProjects? : string[]
 }

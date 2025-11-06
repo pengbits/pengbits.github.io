@@ -10,6 +10,7 @@ import { ButtonLink } from "@/components/ButtonLink"
 import project_data from "@/data/projects"
 import { ProjectDetails } from "@/types/Project"
 import { getProject, getRelatedProjects } from "@/lib/projects"
+import { YouTubeEmbed } from "@/components/projects/YouTubeEmbed"
 
 export const generateStaticParams = function(){
   return project_data.map(project => ({
@@ -63,6 +64,7 @@ export default async function Project({
       heading="3xl" 
       title="About">
       <BodyText body={data.body} />
+      {data.youtube && <YouTubeEmbed videoUrl={data.youtube} />}
     </Section>
     <Section
       heading="3xl"

@@ -1,12 +1,15 @@
 // vendor
 import { List } from "@chakra-ui/react"
+import { Suspense } from "react"
 // components
 import { Section } from "@/components/Section"
 import { ProjectsSection } from "@/components/projects/ProjectsSection"
+import { ProjectGrid } from "@/components/projects/ProjectGrid"
 import { SkillsList } from "@/components/skills/SkillsList"
 import { SectionAnchor } from "@/components/SectionAnchor"
 
 // data
+import { projects_list_min_priority } from "@/data/projects"
 import work_history_data from "@/data/work"
 import about_data from "@/data/about"
 import skills_data from "@/data/skills"
@@ -35,7 +38,9 @@ export default function Home() {
             y:8
           }}
         >
-        <ProjectsSection />
+        <Suspense fallback={<ProjectGrid projects={projects_list_min_priority(200)} />}>
+          <ProjectsSection />
+        </Suspense>
       </Section>
       {/*
       

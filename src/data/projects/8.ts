@@ -35,6 +35,10 @@ const data:ProjectDetails = {
   //   src:   "/the-dudes-ep/10-process-600x450.jpg",
   //   aspectRatio: "landscape"
   }],
+  // xingnfox feat. tame - da muzik
+  youtube: 'https://www.youtube.com/embed/8-VPjzzd0hw?si=vlaESjzJML1jV9Q5',
+  // para one feat TTC - beat down
+  // youtube: "https://www.youtube.com/embed/vd3m5nWBuSY?si=R1CWc7l7Hb-bNGw4" 
   highlights: [
     "Art direction, design, and production for a pivotal release on Shadetek Records.",
     "Each record sleeve was uniquely distressed, altered and customized, resulting in 150 one-of-a-kind collectable products.",

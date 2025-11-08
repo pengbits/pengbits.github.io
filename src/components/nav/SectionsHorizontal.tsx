@@ -1,9 +1,8 @@
-"use client";
 import { Flex, Box } from "@chakra-ui/react"
 import { ColorModeButton } from "@/components/ui/color-mode"
 import { SectionNavigationProps } from "@/types/Section"
 const base_url = '/'
-export const SectionsHorizontal = ({sections,display, appendQuery}:SectionNavigationProps) => {
+export const SectionsHorizontal = ({sections,display}:SectionNavigationProps) => {
     return (<Flex 
       as="ul" justify="flex-end"
       display={display}
@@ -18,7 +17,7 @@ export const SectionsHorizontal = ({sections,display, appendQuery}:SectionNaviga
               bg: "#27272a"
             }
           }}>
-          <a style={{display:'block'}} href={`${base_url}${appendQuery ? `?${appendQuery}` : ''}#${id}`}>{titleShort || title}</a>
+          <a style={{display:'block'}} href={`${base_url}#${id}`}>{titleShort || title}</a>
         </Box>
       </li>)
     )}

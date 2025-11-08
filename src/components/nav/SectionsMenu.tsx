@@ -1,11 +1,10 @@
-"use client";
 import { Box, Menu, Portal } from "@chakra-ui/react"
 import { SectionNavigationProps } from "@/types/Section"
 import { SectionsMenuIcon } from "./SectionsMenuIcon"
 import { ThemeSwitcherMenuItem } from "./ThemeSwitcherMenuItem"
 const base_url = '/'
 
-export const SectionsMenu = ({sections, display, appendQuery}:SectionNavigationProps) => {
+export const SectionsMenu = ({sections, display}:SectionNavigationProps) => {
   return (
   <Box display={display}>
     <Menu.Root>
@@ -22,7 +21,7 @@ export const SectionsMenu = ({sections, display, appendQuery}:SectionNavigationP
               key={s.id} 
               value={s.id}
             >
-              <a href={`${base_url}${appendQuery ? `?${appendQuery}` : ''}#${s.id}`} title={label}>{label}</a>
+              <a href={`${base_url}#${s.id}`} title={label}>{label}</a>
             </Menu.Item>)
           })}
           <Menu.Separator />

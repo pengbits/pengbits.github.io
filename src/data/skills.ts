@@ -1,43 +1,46 @@
 import {EditorializedSkill} from '@/types/Skills'
 
 export const Skills:EditorializedSkill[] = [{
-  name: 'React & Next.js',
+  name: 'React and Next.js',
+  categories: ['Frameworks']
+},{  
+  name: 'Redux Toolkit, Zustand and Context API',
   categories: ['Frameworks']
 },{
   name: 'JavaScript/ES6+/TypeScript',
   categories: ['Languages'],
 },{
-  name: 'Jest, React Testing Library & Vitest',
-  categories: ['Testing','Frameworks']
-},{
-  name: 'HTML5/CSS3/SASS',
+  name: 'HTML5, CSS3, SASS, and Tailwind',
   categories: ['Languages']
 },{
-  name: 'Node.js/NPM/Express',
+  name: 'Node.js, NPM and Express',
   categories: ['Tools','Frameworks']
 },{
-  name: 'Figma & Sketch',
+  name: 'Figma and StoryBook',
   categories: ['Tools']
 },{
-  name: 'RESTful API Integration',
+  name: 'MUI, Shadcn and Chakra UI',
+  categories: ['Frameworks']
+},{
+  name: 'RESTful and GraphQL APIs',
   categories: ['Methodologies']
 },{
-//   name: 'Mobile-First & Responsive Design',
-//   categories: ['Methodologies']
-// },{
   name: 'Cross-Device Compatibility',
   categories: ['Methodologies']
 },{
-  name: 'Performance Profiling & Core Web Vitals',
+  name: 'Performance Profiling and Core Web Vitals',
   categories: ['Methodologies']
 },{
-  name: 'Test-Driven Development & Unit Testing',
+  name: 'Test-Driven Development and Unit Testing',
   categories: ['Testing']
 },{
-  name: 'Babel, Webpack & Vite',
+  name: 'Jest, React Testing Library and Vitest',
+  categories: ['Testing','Frameworks']
+},{
+  name: 'Babel, Webpack and Vite',
   categories: ['Tools']
 },{
-  name: 'Git',
+  name: 'Git, Github and Git Actions',
   categories: ['Tools']
 }]
 

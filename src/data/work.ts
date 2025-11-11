@@ -33,6 +33,7 @@ const work_history:Company[] = [{
     endDate:"11/2012",
     achievements: [
       "Served as Full-Stack developer, creating, iterating on and shipping a Rails CMS that integrated with the legacy Java stack, introducing modern features to existing tools and extending backend team coverage by 25%.",
+      "Frontend Architect of Red Rewards, a suite of features that leveraged a third-party API to bring a gamification layer to the marketing site. Users were incentivized to consume and share content in order to appear in leaderboards and gain access to virtual achievements.",
       "Developed a custom, overlay/modal-style video player backed by the Brightcove Player API, leading to a superior user experience and a 17% lift in video views."
     ]
   },{

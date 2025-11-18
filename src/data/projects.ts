@@ -9,7 +9,7 @@ export const projects_map:ProjectIndex = {
     id:"1",
     title:"Sho.com",
     slug:"sho.com",
-    description:"Full redesign of sho.com, the marketing site for Showtime, a premium cable channel with 4M monthly visitors at its peak. I lead the development of a Design System with a library of 100+ reusable components to support the build.",
+    description:"Full redesign of sho.com, the marketing site for Showtime, a premium cable channel with 4M monthly visitors at its peak. I led the development of a Design System with a library of 100+ reusable components to support the build.",
     priority: 550,
 		primaryLink: 'local',
     image: "/sho.com/home_00_512x384.jpg",

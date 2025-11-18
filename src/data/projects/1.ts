@@ -7,7 +7,7 @@ const data:ProjectDetails = {
   highlights: [
     `Championed the use of design systems, improving cross-functional collaboration.`,
     `Implemented a library of 100+ reusable components, accelerating development by 2-3x.`,
-    `Lead development of a consistent, responsive, visually impactful user experience. `
+    `Led development of a consistent, responsive, visually impactful user experience. `
   ],
   body:[
     `Sho.com was the marketing site for Showtime, a premium cable channel, which had 4 million monthly unique visitors at it's peak. 

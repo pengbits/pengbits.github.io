@@ -26,6 +26,12 @@ const data:ProjectDetails = {
   },{
     base: "/fbpeds/fbpeds-03-chart_390x780.jpg",
     md:   "/fbpeds/fbpeds_01_1024x768.jpg"
+  },{
+    base: "/fbpeds/fbpeds_04-providers_390x780.jpg",
+    md:   "/fbpeds/fbpeds_04-providers_1024x768.jpg"
+  },{
+    base: "/fbpeds/fbpeds_05-provider-details_390x780.jpg",
+    md:   "/fbpeds/fbpeds_05-provider-details_1024x768.jpg"
   }],
   tags:[
     "React",

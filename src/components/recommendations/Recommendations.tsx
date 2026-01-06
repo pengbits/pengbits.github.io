@@ -7,7 +7,7 @@ type RecommendationsProps = {
   data: Recommendation[] // recommendation
 }
 
-const RecommendationItem = ({r:{image,author,title,date,body}}:RecommendationItemProps) => (
+const RecommendationItem = ({r:{image,author,title,date,body,mediumText}}:RecommendationItemProps) => (
   <Box mb="4">
     <Flex flexDir="row">
       <Avatar.Root size="xl" mt="2" >
@@ -25,6 +25,9 @@ const RecommendationItem = ({r:{image,author,title,date,body}}:RecommendationIte
           {date}
          </Text>
         <Text fontSize="md">
+          {mediumText}
+        </Text>
+        <Text fontSize="md" display="none">
           {body.map((line,k) => (
             <Box key={k} as="span" display="block" marginBottom="2">{line}</Box>
           ))}

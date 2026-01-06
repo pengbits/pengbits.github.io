@@ -1,4 +1,4 @@
-import { Recommendation } from '@/types/Recommendation'
+import { Recommendation, MEDIUM_TEXT_LENGTH } from '@/types/Recommendation'
 const recommendation_data: Recommendation[] = [{
   author: 'Alex Ciepley',
   image:'alex.jpeg',
@@ -117,4 +117,10 @@ const recommendation_data: Recommendation[] = [{
     ]
 }]
 
-export default recommendation_data
+export default recommendation_data.map(r => {
+  const bodyText = r.body.join("\n")
+  const mediumText = bodyText.length > MEDIUM_TEXT_LENGTH ? bodyText.substring(0,MEDIUM_TEXT_LENGTH) + '…' : bodyText
+  return {...r,
+    mediumText
+  }
+})

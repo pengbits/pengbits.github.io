@@ -5,18 +5,26 @@ import { BodyText } from "@/components/projects/BodyText"
 import ProjectLinkCollection from "@/components/projects/ProjectLinkCollection"
 import { ResponsiveVideo } from "@/components/projects/ResponsiveVideo"
 import { ResponsiveImage } from "@/components/projects/ResponsiveImage"
-import { StaticImage } from "@/components/projects/StaticImage"
+import type { ResponsiveImageSrc, StaticImageSrc } from "@/types/Project"
 import { ButtonLink } from "@/components/ButtonLink"
+
 import project_data from "@/data/projects"
 import { ProjectDetails } from "@/types/Project"
 import { getProject, getRelatedProjects } from "@/lib/projects"
-import { YouTubeEmbed } from "@/components/projects/YouTubeEmbed"
+import { StaticImage } from "@/components/projects/StaticImage"
 
 export const generateStaticParams = function(){
   return project_data.map(project => ({
     id: project.id,
     slug: project.slug
   })) 
+}
+const renderImage = (img:ResponsiveImageSrc | StaticImageSrc, i:number) => {
+  if('aspectRatio' in img){
+    return <StaticImage key={i} src={img.src} aspectRatio={img.aspectRatio} />
+  } else {
+    return <ResponsiveImage key={i} src={img} />
+  }
 }
 
 export default async function Project({
@@ -41,12 +49,7 @@ export default async function Project({
       heading="3xl"
       title=""
     >
-      {data.images.map((image,i) => {
-        return ('base' in image) ?
-          <ResponsiveImage key={i} src={{base:image.base, md:image.md}} />
-        :
-          <StaticImage key={i} src={image.src} aspectRatio={image.aspectRatio} />
-      })}
+      {data.images.map(renderImage)}
     </Section>}
 
     {data.video && <Section
@@ -64,7 +67,6 @@ export default async function Project({
       heading="3xl" 
       title="About">
       <BodyText body={data.body} />
-      {data.youtube && <YouTubeEmbed videoUrl={data.youtube} />}
     </Section>
     <Section
       heading="3xl"

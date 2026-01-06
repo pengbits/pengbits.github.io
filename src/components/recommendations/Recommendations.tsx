@@ -1,34 +1,47 @@
-import { Box, Heading, Text } from "@chakra-ui/react"
+import { Avatar, AvatarGroup } from "@chakra-ui/react"
+import { Flex, Box, Heading, Text } from "@chakra-ui/react"
 import type { Recommendation } from "@/types/Recommendation"
+import { IMAGE_BASE_RECOMMENDATIONS } from "@/lib/images"
 
 type RecommendationsProps = {
   data: Recommendation[] // recommendation
 }
-type RecommendationItemProps = {
-  content: Recommendation
-}
 
-const RecommendationItem = ({content:{author,title,body}}:RecommendationItemProps) => (
+const RecommendationItem = ({r:{image,author,title,date,body}}:RecommendationItemProps) => (
   <Box mb="4">
-    <Heading size="lg">
-      {author}
-    </Heading>
-    <Text fontSize="sm">
-      {title}
-    </Text>
-    <Text fontSize="md">
-      {body.map((line,k) => (
-        <Box as="span" key={k} marginBottom="2">{line}</Box>
-      ))}
-    </Text>
+    <Flex flexDir="row">
+      <Avatar.Root size="xl" mt="2" >
+        <Avatar.Image src={`${IMAGE_BASE_RECOMMENDATIONS}/${image}`}></Avatar.Image>
+        <Avatar.Fallback name="Author" />
+      </Avatar.Root>
+      <Box ml="4">
+        <Heading size="lg">
+          {author}
+        </Heading>
+        <Heading size="md">
+          {title}
+        </Heading>
+         <Text fontSize="md">
+          {date}
+         </Text>
+        <Text fontSize="md">
+          {body.map((line,k) => (
+            <Box key={k} as="span" display="block" marginBottom="2">{line}</Box>
+          ))}
+        </Text>
+      </Box>
+    </Flex>
   </Box>
 )
 
+type RecommendationItemProps = {
+  r: Recommendation
+}
 
 export const Recommendations = ({data}:RecommendationsProps) => (
   <Box>
     {(data || []).map((r,index) => (<RecommendationItem 
-      content={r} key={index}
+      r={r} key={index}
     />))}
   </Box>
 )

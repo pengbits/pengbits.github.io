@@ -2,14 +2,14 @@ import { Heading, GridItem, Link, Text, Image} from "@chakra-ui/react";
 import {Project} from "@/types/Project"
 import ProjectLinkCollection from "./ProjectLinkCollection";
 // import Image from "next/image";
-import { IMAGE_BASE } from "@/lib/images";
+import { IMAGE_BASE, IMAGE_BASE_PROJECTS } from "@/lib/images";
 import { targetForPath } from "@/lib/links";
 
 const LinkedImage = ({src,href}:{src:string, href?:string}) => (
   <Link display="block" target={targetForPath(href || '')} href={href}>
     <Image
       mb="4"
-      src={`${IMAGE_BASE}/${src}`}
+      src={`${IMAGE_BASE_PROJECTS}/${src}`}
       width='100%'
       aspectRatio={4/3}
       htmlWidth={512}

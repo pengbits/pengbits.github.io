@@ -21,7 +21,7 @@ const RecommendationItem = ({r:{image,author,title,date,body}}:RecommendationIte
         <Heading size="md">
           {title}
         </Heading>
-         <Text fontSize="md">
+         <Text fontSize="md" mb="2">
           {date}
          </Text>
         <Text fontSize="md">

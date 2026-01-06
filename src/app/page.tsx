@@ -106,7 +106,7 @@ export default function Home() {
       */}
 
       <Section
-        heading="3xl" 
+        heading="4xl" 
         title="Recommendations"
       >
         <Recommendations data={recommendation_data} />

@@ -7,13 +7,14 @@ import { ProjectsSection } from "@/components/projects/ProjectsSection"
 import { ProjectGrid } from "@/components/projects/ProjectGrid"
 import { SkillsList } from "@/components/skills/SkillsList"
 import { SectionAnchor } from "@/components/SectionAnchor"
+import { Recommendations } from "@/components/recommendations/Recommendations"
 
 // data
 import { projects_list_min_priority } from "@/data/projects"
 import work_history_data from "@/data/work"
 import about_data from "@/data/about"
 import skills_data from "@/data/skills"
-
+import recommendation_data from "@/data/recommendations"
 export default function Home() {
   return (<>
       <Section
@@ -99,6 +100,16 @@ export default function Home() {
           })}
           </Section>)
         })}
+      </Section>
+      {/* 
+      =:recommendations 
+      */}
+
+      <Section
+        heading="3xl" 
+        title="Recommendations"
+      >
+        <Recommendations data={recommendation_data} />
       </Section>
   </>
   )

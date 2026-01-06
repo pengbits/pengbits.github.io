@@ -8,8 +8,11 @@ const work_history:Company[] = [{
     startDate:"01/2024",
     endDate:"Current",
     achievements: [
-      "Developing a copy of the NYC parking app, using publicly-available meter data to populate a collection of REST APIs for the geospatial layer, which are consumed by a React client with a Google Maps integration. (In-progress).",
-      "Built a clone of Tribeca Pediatrics' patient portal with 80% feature parity, designing and deploying REST APIs and developing a custom, mobile-optimized user experience using Shadcn components and Chart.js for data visualizations."
+      "Developing a parking app that leverages the Google Maps API to display available meter spots.",
+      "Created a GraphQL api to house thanks and shout-outs as part of a larger multiformat xmas card release.",
+      "Built a patient portal using Shadcn for the frontend, Chart.js for data visualizations, and a Node.js/Express backend.",
+      "Completed modules on Tailwind, GraphQL API integration and Advanced React on FrontendMasters.com.",
+      "Completed Full-Stack Development Path on Codecademy.com."
     ]
   }],
 },{
@@ -20,12 +23,13 @@ const work_history:Company[] = [{
     startDate:"11/2012",
     endDate:"09/2023",
     achievements: [
-      "Collaborated with Product, Design, and Engineering teams to build new features, publishing tools and web applications for Showtime's marketing site, which had 4M monthly unique visitors at its peak.",
-      "Championed the use of design systems, implementing a library of 100+ reusable components, resulting in 2x faster development times and a responsive, visually appealing UI.",
-      "Developed a React client for a CMS with features such as composable form UI, date preview, rich-text-editor, filters, themes, and support for 500+ promotions, 50+ campaigns, and 20+ form types. Worked closely with Backend team to integrate RESTful APIs.",
-      "Contributed code, wrote unit tests, and deployed services for Otto, a data warehouse built in AWS, facilitating a better understanding of customer acquisition through large scale data extraction and analysis.",
-      "Introduced Test-Driven-Development to the Frontend Team, improving code quality. Migrated build tools from Gulp to Webpack, modernizing the release workflow and reducing asset size and compilation times by 25%.",
-      "Manager to junior engineers, providing mentorship, setting coding standards and performing code reviews, increasing code quality and productivity by 20%."
+      "Championed the use of Design Systems, built a library of 100+ reusable components, accelerating dev time by 2x.",
+      "Led frontend development of a full-redesign of Showtime’s marketing site with 4M monthly unique visitors.",
+      "Partnered with Product to identify features for an MVP, architected a new CMS to power the site, eliminating the need for engineering resources to make content updates and crafting a best-in-class publishing tool from scratch.",
+      "Contributed code, wrote unit tests, and deployed services for Otto, a cloud-native data warehouse built in AWS, facilitating a better understanding of customer acquisition through large scale data extraction and analysis.",
+      "Introduced TDD to the frontend team, reducing regression bugs by ~30% and noticeably improving code quality.",
+      "Migrated build tools from Gulp to Webpack, modernizing the release workflow, reducing asset size by ~35%, and improving compilation times by ~20%.",
+      "Managed 2–3 engineers, mentoring, defining coding standards, and reviewing code; reduced PR revisions by ~25% and helped the team ship features ~15% faster.",
     ]
   },{
     title: "Senior Front-end Developer",

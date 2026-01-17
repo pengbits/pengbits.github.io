@@ -31,20 +31,9 @@ export const RecommendationItem = ({content:{image,author,title,date,body,medium
         asChild
           mt="4"
           size="xs" 
-          bgColor={{
-            base: "gray.200", 
-            _hover: "gray.300",
-            _dark: {
-              base: "gray.800",
-              _hover: "gray.700"
-            }
-          }}
-          color={{
-            base:"gray.900",
-            _dark: "gray.200"
-          }}
+          variant="subtle"
         >
-        <Link href="https://www.linkedin.com/in/davepaul/details/recommendations/">
+        <Link target="_blank" href="https://www.linkedin.com/in/davepaul/details/recommendations/">
           Read More</Link>
         </Button>
         

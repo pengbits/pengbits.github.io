@@ -46,13 +46,13 @@ export const ProjectGridWithLoadMore = ({ initialProjects, belowPriority }: Prop
       <ProjectGrid projects={projects} />
       {hasMore && (
         <Flex justifyContent="center" mt="4">
-          <Button onClick={onLoadMore} disabled={isPending} aria-busy={isPending}>
+          <Button bg="bg.muted" color="fg" onClick={onLoadMore} disabled={isPending} aria-busy={isPending}>
             {isPending ? (
               <>
                 <Spinner size="sm" mr="2" /> Loading...
               </>
             ) : (
-              "Load more"
+              "Load More"
             )}
           </Button>
         </Flex>
